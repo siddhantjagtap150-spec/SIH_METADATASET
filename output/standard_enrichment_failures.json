@@ -1,0 +1,77 @@
+[
+  {
+    "standardId": 21357,
+    "endpoint": "https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee",
+    "payload": {
+      "StandardId": 21357
+    },
+    "HTTP status": 200,
+    "response/error": {
+      "status": "SUCCESS",
+      "statusCode": 200,
+      "msg": "No record found",
+      "data": []
+    },
+    "attempt count": 1
+  },
+  {
+    "standardId": 21404,
+    "endpoint": "https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee",
+    "payload": {
+      "StandardId": 21404
+    },
+    "HTTP status": 200,
+    "response/error": {
+      "status": "SUCCESS",
+      "statusCode": 200,
+      "msg": "No record found",
+      "data": []
+    },
+    "attempt count": 1
+  },
+  {
+    "standardId": 21390,
+    "endpoint": "https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee",
+    "payload": {
+      "StandardId": 21390
+    },
+    "HTTP status": 200,
+    "response/error": {
+      "status": "SUCCESS",
+      "statusCode": 200,
+      "msg": "No record found",
+      "data": []
+    },
+    "attempt count": 1
+  },
+  {
+    "standardId": 21389,
+    "endpoint": "https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee",
+    "payload": {
+      "StandardId": 21389
+    },
+    "HTTP status": 200,
+    "response/error": {
+      "status": "SUCCESS",
+      "statusCode": 200,
+      "msg": "No record found",
+      "data": []
+    },
+    "attempt count": 1
+  },
+  {
+    "standardId": 21395,
+    "endpoint": "https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee",
+    "payload": {
+      "StandardId": 21395
+    },
+    "HTTP status": 200,
+    "response/error": {
+      "status": "SUCCESS",
+      "statusCode": 200,
+      "msg": "No record found",
+      "data": []
+    },
+    "attempt count": 1
+  }
+]

@@ -1,0 +1,12 @@
+{
+	"dataset": {
+		"dataset_id": "BIS-QCO-MASTER",
+		"dataset_name": "BIS Quality Control Orders Master Dataset",
+		"version": "1.0.0",
+		"source_authority": "Government of India / Bureau of Indian Standards",
+		"source_policy": "official_only",
+		"last_verified": "2026-09-15",
+		"record_count": 0
+	},
+	"records": []
+}

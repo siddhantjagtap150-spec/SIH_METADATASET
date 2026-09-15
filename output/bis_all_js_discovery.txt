@@ -1,0 +1,971 @@
+================================================================================
+BIS ALL JAVASCRIPT DISCOVERY
+================================================================================
+
+JavaScript files discovered: 3
+JavaScript files downloaded: 3
+API strings found: 20
+Standards-related strings found: 297
+
+
+================================================================================
+ALL API STRINGS
+================================================================================
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/Address/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/BISTalks/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/Banner/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/FAQ/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/Handbook&guidelines/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/HowToUsePortal/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/ManageCategory/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/ManageGallery/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/ManageMenu/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/ManagePages/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/NewsandMedia/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/QuickLink/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/RDGuidelines/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/RdFaq/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/SDORecognitionScheme/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/SDOsinIndia/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/StandardoftheMonth/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/StrategicRoadmaps/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/Testimonials/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+API : /api/standardsoftheweek/viewAll
+
+
+================================================================================
+STANDARDS-RELATED STRINGS
+================================================================================
+
+FILE: https://standards.bis.gov.in/angular.js
+STRING: >BIS - Bureau of Indian Standards</title>
+  <meta charset=
+
+FILE: https://standards.bis.gov.in/angular.js
+STRING: re BIS, The National Standards Body of India. We develop &amp; publish Indian Standards, Implement Conformity Assessment Schemes, Recognise &amp; run laboratories
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING:  Ticket Details - 
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: &&wt instanceof URLSearchParams}(this.body)||
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )),(mn=ze.search(/e/i))>0?(bt<0&&(bt=mn),bt+=+ze.slice(mn+1),ze=ze.substring(0,mn)):bt<0&&(bt=ze.length),mn=0;
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )+Ot}}else this.params=new ae,this.urlWithParams=Pt}serializeBody(){return null===this.body?null:qe(this.body)||ut(this.body)||yt(this.body)||function Ct(wt){return typeof URLSearchParams<
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )+p.search).replace(/^\//,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ),Downloadable:o(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ),Ut=`${ot.getFullYear()}${Gt(ot.getMonth()+1)}${Gt(ot.getDate())}_${Gt(ot.getHours())}${Gt(ot.getMinutes())}${Gt(ot.getSeconds())}`;be.download=`${this.itemLabel}s_${Ut}.xlsx`,be.click(),window.URL.revokeObjectURL(ce)}else this.alertHelper.viewAlert(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ),i=o.match(n),i||null)}}class QA{constructor(e,n,i,o){this.url=this._getValidUrl(n),this._locale=e,this._match=i,this._previewRenderer=o}getViewElement(e,n){const i={};let o;if(n.renderForEditingView||n.renderMediaPreview&&this.url&&this._previewRenderer){this.url&&(i[
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ),this.userId=this.userDetails?.userId,setTimeout(()=>{this.flatpickrInstanceStart=(0,Vr.A)(this.flatpickrInputstart.nativeElement,{altFormat:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ),this.userId=this.userDetails?.userId,this.initializeForm()}ngOnChanges(l){l.dataEducationExtendParams&&this.dataEducationExtendParams&&(this.actionButtonLabel=this.dataEducationExtendParams?.buttonName??
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ).add(XC(g,{elementName:u,renderMediaPreview:c})),o.for(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ).length>this.clarificationRemarksPreviewLimit}getClarificationRequestedDisplayText(){const l=this.getClarificationRequestedText();return!this.isClarificationRequestedLong()||this.isClarificationRemarksExpanded?l:l.substring(0,this.clarificationRemarksPreviewLimit)+
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: );X.href=window.URL.createObjectURL(y),X.download=l,X.click(),setTimeout(()=>{this.spinner.hide()},500)},p=>{this.spinner.hide(),console.error(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: );ce.href=X,ce.download=l.split(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: );const c=this._getPreviewHtml(n);o=e.createRawElement(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: );let p=null;l&&f&&(p={userId:l}),this.http.post(`${this.consultationServiceURL}getPollByEncryptedData`,{encryptedData:this.encryptedData,userDetail:p},{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: );return QC(w,g,P,{elementName:u,renderMediaPreview:!!P&&c})}}),o.for(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )?.value,numb1:this.numb1,numb2:this.numb2,device_details:y,inputPassword:j.AES.encrypt(ce,D.c.cook).toString()}),this.captchaAnswer==this.loginForm.get(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )}/downloadPublishedStandardsListExcel`;return this.http.post(D,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )};null!=f&&(p.userIdPlain=String(f));const y={encryptedData:this.encryptedData,userDetail:p};null!=f&&(y.userId=f),this.http.post(`${this.consultationServiceURL}getSurveyByEncryptedData`,y,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: )}_report_${f+1}.xlsx`;be.download=Ut,be.click(),window.URL.revokeObjectURL(ce),this.spinner.hide()}else this.spinner.hide(),this.alertHelper.viewAlert(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: +Co.body.result.moduleDetails.modleType;localStorage.removeItem(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: +t.r5.STANDARD_CURVE,de={indicator:(0,v.hZ)(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,!!Gt),ot&&Gt)return 3===f?void this.fetchSurveyWithUserDetail():(this.surveyData=l,this.questions=l.questions||[],void this.buildFormArray());p<5?setTimeout(()=>{this.checkAuthWithRetry(l,f,p+1)},200):(console.warn(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,!0,o),o}_getPreviewHtml(e){return this._previewRenderer?this._previewRenderer(this._match):this.url&&e.renderForEditingView?this._getPlaceholderHtml():
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,(Ke._data.length>0||Ke._settings.allowRemoteDataSearch)&&!Ke._settings.singleSelection&&Ke._settings.enableCheckAll&&-1===Ke._settings.limitSelection),h.R7$(1),h.Y8G(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,(Ke._data.length>0||Ke._settings.allowRemoteDataSearch)&&Ke._settings.allowSearchFilter),h.R7$(1),h.xc7(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,0!=Ke._data.length&&0==h.i5U(16,18,Ke._data,Ke.filter).length&&!Ke._settings.allowRemoteDataSearch),h.R7$(2),h.Y8G(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,0==Ke._data.length&&!Ke._settings.allowRemoteDataSearch))},dependencies:[ie.YU,ie.Sq,ie.bT,L.me,L.BC,L.vS,Y,j],styles:[
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,0==p.educationDetails.length),t.R7$(5),t.Y8G(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,0==p.experienceDetails.length))},dependencies:[L.Sq,L.bT,I.Wk,I.wQ,Pi,L.PV]})}return C})();var Vr=B(6556),is=B(8032),io=B.n(is),us=B(3940);let Or=(()=>{class C{constructor(l){this.ngControl=l}onInputChange(l){const f=l.target;let p=f.value;p=p.replace(/<script.*?>.*?<\/script>/gi,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,65),t.k0s()(),t.bVm())}let ds=(()=>{class C{constructor(l,f,p,y){this.authServic=l,this.spinner=f,this.encService=p,this.router=y,this.isImageAvail=!1,this.userDetails={fullName:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,69),t.EFF(7),t.k0s()()()),2&C){const l=t.XpG();t.R7$(3),t.JRh(t.bMT(4,2,l.displayOrgName)),t.R7$(4),t.JRh(l.userDetails.category)}}function gr(C,M){1&C&&(t.qex(0),t.j41(1,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,[V.k0.required]],device_details:[
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,allowAnonymous:this.surveyData.allowAnonymous??this.surveyData.allow_anonymous,encryptedSurveyDetails:this.encryptedData,surveyImage:this.surveyData.surveyImage??null}:null;this.router.navigate([
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,allowSearchFilter:!0,enableCheckAll:!1,closeDropDownOnSelection:!0,searchPlaceholderText:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,allowSearchFilter:!0,enableCheckAll:!1})})}getIconByExtension(l){switch(l){case
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,allowSearchFilter:!1,limitSelection:-1,clearSearchFilter:!0,maxHeight:197,itemsShowLimit:999999999999,searchPlaceholderText:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,closeDropDownOnSelection:!1,showSelectedItemsAtTop:!1,defaultOpen:!1,allowRemoteDataSearch:!1};set placeholder(de){this._placeholder=de||
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,de._settings.searchPlaceholderText)(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,device_details:y,inputPassword:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,enableCheckAll:!1,allowSearchFilter:!0,closeDropDownOnSelection:!0,clearSearchFilter:!0},this.allLabels=[
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){const y=t.eBV(l).index,X=t.XpG(2);return t.Njj(X.downloadExcel(X.selectedModule,y))}),t.nrm(8,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){return p.toggleAdminTicketDetails()}),t.nrm(129,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG().$implicit,y=t.XpG(3);return t.Njj(y.downloadFile(p.documentPath))}),t.nrm(9,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG();return t.Njj(p.downloadFile(p.clarificationRequestDocumentPath))}),t.nrm(8,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG();return t.Njj(p.downloadFile(p.cvUrl))}),t.nrm(2,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG(2);return t.Njj(p.downloadFile(p.selectedTicketForLog.documentPath))}),t.nrm(11,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG(2);return t.Njj(p.goBackToSurveyDetails())}),t.nrm(1,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG(3);return t.Njj(p.downloadFile(p.filePath))}),t.nrm(5,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(){t.eBV(l);const p=t.XpG(3);return t.Njj(p.downloadFile(p.tempImagePath))}),t.nrm(4,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,function(p){t.eBV(l);const y=t.XpG();return t.Njj(y.departmentSearchText=p)})(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,imageWidth:o,imageHeight:c,...g?{imagePlaceholder:g}:null}}function uk(s){return{linkName:s.data.name,linkHref:qx(s)}}function qx(s){const e=new URL(s.data.url);return e.searchParams.set(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,l.educationDetails)}}function Do(C,M){1&C&&(t.qex(0),t.j41(1,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,l.experienceDetails)}}function Li(C,M){1&C&&(t.qex(0),t.j41(1,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,l.userDetails.salutation,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,landingUrl:Hi,encryptedData:this.encryptedData}})}}fetchSurveyWithUserDetail(){const l=localStorage.getItem(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,null==l.personalDetails?null:l.personalDetails.linkdinProfile,t.B4B)}}function Ds(C,M){if(1&C&&(t.j41(0,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,null==p.personalDetails?null:p.personalDetails.linkdinProfile),t.R7$(11),t.SpI(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.educationDetails.length>0),t.R7$(1),t.Y8G(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.experienceDetails.length>0),t.R7$(1),t.Y8G(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.isAdminTicketDetailsExpanded),t.R7$(6),t.SpI(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.address?p.userDetails.address:t.bMT(33,28,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.deptName?p.userDetails.deptName:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.desgName?p.userDetails.desgName:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.emailId?p.userDetails.emailId:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.mobileNumber?p.userDetails.mobileNumber:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.roleName?p.userDetails.roleName:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,p.userDetails.salutation),t.R7$(1),t.SpI(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,reviewServiceURL:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,t.bMT(22,26,p.userDetails.fullName),
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.adminIntimateToTicketCreator=!1,this.isAdminStatusModalOpen=!0}closeAdminStatusModal(){this.isAdminStatusModalOpen=!1,this.adminSelectedTicketId=0,this.adminSelectedTicket={},this.isAdminTicketDetailsExpanded=!1,this.adminSelectedStatus=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.departmentSearchText=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.displayTopbar=!0,this.displayModuleNotificationSearch=!0,this.role=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.isClarificationRequestAttachmentLoading=!1,this.isClarificationRemarksExpanded=!1,this.clarificationRemarksPreviewLimit=200,this.isAdminStatusModalOpen=!1,this.adminSelectedTicketId=0,this.adminSelectedTicket={},this.isAdminTicketDetailsExpanded=!1,this.adminSelectedStatus=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.isDetailsModalOpen=!1,this.selectedTicketDetails={},this.isActionLogModalOpen=!1,this.isActionLogLoading=!1,this.selectedTicketForLog={},this.actionLogData=[],this.autoCloseRemarksText=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.redirectToGuestForWorldOfStandard=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.searchContentMaxLength=100,this.departmentOptions=[],this.filteredDepartmentOptions=[],this.departmentSearchText=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.showOtherOrgInput=!!this.existingOrgName&&!X,this.salutationList=f.body?.salutationList||[],this.isCommitteeMember=f.body.result.isCommitteeMember||!1,setTimeout(()=>{const ce=f.body?.userProfileDetails||{},be=null!==f.body.result.dateOfYear&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.specializations=[],this.userDetails=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,this.spinner.hide()}})}downloadFile(l){this.spinner.show();const f=this.getImageUrl(l);this.fileService.downloadFile(f).subscribe(p=>{const y=new Blob([p],{type:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,worldofStandardServiceUrl:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ,y.organization),this.cdr.detectChanges(),this.saveParticipantDetails()}})})}saveParticipantDetails(){if(!this.surveyData||!this.surveyData.surveyId)return void this.alertHelper.viewAlert(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: .search(new RegExp(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /api/StandardoftheMonth/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /api/standardsoftheweek/viewAll
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /download-excel
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /download-file
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /userEditDetail
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: /userProfileDetail
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: :f.body?.userProfileDetails?.orgName||f.body?.result?.orgName||
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ==this.currentUrl)&&(this.displayModuleNotificationSearch=!1)}initializeTooltips(){const l=window.bootstrap;l&&l.Tooltip?[].slice.call(document.querySelectorAll(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Approved Planning Items Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Approved Planning Items by Ministry Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: BIS - Bureau of Indian Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: BIS Talks \u2014 talks, sessions and knowledge-sharing programmes from the Bureau of Indian Standards.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Browse Indian Standards by technical department \u2014 Department Wise Classification from the Bureau of Indian Standards (BIS).
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Bureau of Indian Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Bureau of Indian Standards (BIS) logo
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Call for Expert Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Catalogue Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Catalogue List
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Code of Good Practice for the Preparation, Adoption and Application of Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Committee Panel Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Committee Programme of Work
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Conversation Video Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Department Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Department Panel Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Department Wise Classification
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Describe or clarify the issue in detail...
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Download error:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Download failed. Please try again.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: DownloadProgress
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Downloadable
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Error saving participant details:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Failed to save participant details.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Frequently asked questions about BIS services, Indian Standards, certification, hallmarking and related processes.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Full list of published Indian Standards from the Bureau of Indian Standards (BIS).
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: How to use the BIS website \u2014 guides for finding Indian Standards, services, and online features of the Bureau of Indian Standards.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Know Your Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Lab Scope Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Learn about the Bureau of Indian Standards (BIS), established for harmonious development of standardization, marking and quality certification of goods in India.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Live Session Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Manak Manthan Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Meeting Calendar Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Member Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: New Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: New Standards Committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: New Standards List
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: News Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: No searchable items
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Panel Member Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Photo and media gallery of the Bureau of Indian Standards (BIS) \u2014 events, programmes and institutional activities.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Please enter clarification details before submitting.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Privacy Policy of the Bureau of Indian Standards (BIS) \u2014 how personal information is collected, used and protected on this website.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Program Group Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Programme of Work
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Proposal Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Proposals for Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Publication Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Indian Standards listed by department from the Bureau of Indian Standards (BIS).
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Indian Standards listed by group from the Bureau of Indian Standards (BIS).
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Indian Standards listed by ministry from the Bureau of Indian Standards (BIS).
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Standards List
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Standards by Group
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Standards by Ministry
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Published Surveys
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Research Projects
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Review of Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Review of Standards Committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Review of Standards List
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Revised Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Revised Standards Committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Revised Standards List
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: SDO Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: SDO Recognized Standard
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: SDO Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: SDO Standards Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: SDO Standards Document Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search & Filter
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search BIS Officers
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search by 
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search by Content
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search department...
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search failed:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Search users
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Share Thoughts Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Sitemap of the Bureau of Indian Standards website \u2014 browse all sections and pages of bis.gov.in.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Standard Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Standard Sector Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Standardization Cells
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Standards of the Month
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Standards of the Week
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Survey Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Terms and Conditions for using the Bureau of Indian Standards (BIS) website and related online services.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Unable to download Excel. Please try again.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: Unable to download file. Please try again.
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: WC Draft Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: WC Draft Document Details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: World of Standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ];let Ve=(()=>{class st{static#e=this.STANDARD_CURVE=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ]],[/ya(?:search)?browser\/([\w\.]+)/i],[K,[D,
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ]};let Pi=(()=>{class C{constructor(l,f,p,y,X,ce){this.eRef=l,this.router=f,this.activatedRoute=p,this.authServic=y,this.spinner=X,this.alertHelper=ce,this.displayTopbar=!0,this.displayModuleNotificationSearch=!0,this.name=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ]}ngOnInit(){this.encId=this.route.snapshot.params.encId,this.userDetails=JSON.parse(localStorage.getItem(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: action-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: adminTicketDetailsAccordion
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: adminTicketDetailsCollapse
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: adminTicketDetailsHeading
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: approved-planning-items/dept-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: approved-planning-items/ministry-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: bi-download
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: bisicon-standards-club
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: call-for-expert-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: catalogue-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: catalogues-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: ck-link-actions__preview
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: experience-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: groupmail__details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: know-your-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: lab-scope-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: live-sessions-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: manak-manthan-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: meeting-calendar-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: member-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: menuBar:previewMergeFields
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: module-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: multiselect-search
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: new-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: new-standards-committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: new-standards-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: news-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: nodownload
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: pendingExcelDownload
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: poll-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: previewMergeFields
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: proposals-for-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: proposals-standards-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: published-standards/department-wise
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: published-standards/published-standard-deptwise
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: published-standards/published-standard-groupwise
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: published-standards/published-standard-ministrywise
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: published-standards/published-standards-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: re BIS, The National Standards Body of India. We develop & publish Indian Standards, Implement Conformity Assessment Schemes, Recognise & run laboratories
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: review-of-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: review-of-standards-committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: review-of-standards-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: revised-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: revised-standards-committees
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: revised-standards-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: right-sidebar-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: sdo-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: sdo-details-standards
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: sdo-recognized-standard
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: sdo-standards-document-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: sdo-standards-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: search-filter-area-100
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: search-filter-area-100 border rounded p-3 mb-3
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: standard-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: standard-sector-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: standardization-cells
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: standards-of-the-month
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: standards-of-the-week
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: survey-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: technical-departments/committee-panel-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: technical-departments/department-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: technical-departments/department-panel-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: technical-departments/panel-member-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: thankyou-details-inner
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: token-cannot-download-new-token
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: userDetail
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: wc-drafts-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: wc-drafts-document-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: webpack://./../ckeditor5-theme-lark/theme/ckeditor5-ui/components/search/search.css
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/conversation-video-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/conversation-video-list
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/modulelist
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/program-group-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/research-projects
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/sustainability-program
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/web-share-publications
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/web-share-publications-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/web-sharethoughts
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: worldofstandard/web-sharethoughts-details
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}const f=this.userDetails?.dateOfYear||this.personalDetails?.dateOfYear;return f?String(f):
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}downloadDepartmentWiseExcel(E,A){let D=`${this.planningServiceURL}/getPlanningItemsByDeptsExcel`;const j={financialYear:E};return A&&(j.departmentId=A),this.http.get(D,{params:j,responseType:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}downloadDepartmentWiseExcelReport(E,A){let D=`${this.planningServiceURL}/getPlanningItemsByDeptsExcelReport`;const j={financialYear:E};return A&&(j.departmentId=A),this.http.get(D,{params:j,responseType:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}downloadMinistryWiseExcelReport(E,A){let D=`${this.planningServiceURL}/getPlanningItemsByMinistryReport`,j={financialYear:E};return A&&(j.ministryId=A),this.http.get(D,{params:j,responseType:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}downloadMinistryWiseExcelTable(E,A){let D=`${this.planningServiceURL}/getPlanningItemsByMinistryExcel`;const j={financialYear:E};return null!=A&&(j.ministryId=A),this.http.get(D,{params:j,responseType:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}downloadStandardList(E,A){const D=new h.Lr({
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}exportCommitteeDetailsExcel(E){return this.http.post(`${this.masterURL}/exportCommitteeDetailsExcel`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}exportDepartmentDetailsExcel(E){return this.http.post(`${this.CreateProjectServiceURL}/exportDepartmentDetailsExcel`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}exportProgrammeOfWorkExcel(E){return this.http.post(`${this.CreateProjectServiceURL}/exportProgrammeOfWorkExcel`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}exportProgrammeOfWorkPdf(E){return this.http.post(`${this.CreateProjectServiceURL}/exportProgrammeOfWorkPdf`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getAllCatOrganization(l){this.masterServic.getOrgByCatDetail({categoryId:l}).subscribe(p=>{this.spinner.hide(),200==p.status&&(this.org=[...p.body.data,{orgId:-1,OrgName:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getApprovedPlanningDepartmentDetail(E,A){let D=`${this.planningServiceURL}/getApprovedPlanningDepartmentDetail`;const j=(new h.Nl).set(
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getNewStandardsCommitteeCount(E){return this.http.post(`${this.masterURL}/getNewStandardsCommitteeCount`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getNewStandardsDepartmentCount(E){return this.http.post(`${this.masterURL}/getNewStandardsDepartmentCount`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getNewStandardsList(E){return this.http.post(`${this.masterURL}/getNewStandardsList`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getProjectDocuments(E){return this.http.post(`${this.SdoServiceUrl}/getProjectDocuments`,{circulationDetailId:E})}getSdoDetails(E){return this.http.post(`${this.SdoServiceUrl}/WebsiteSdoDetails`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getReviewOfStandardsCommitteeCounts(E){return this.http.post(`${this.masterURL}/getReviewOfStandardsCommitteeCounts`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getReviewOfStandardsDepartmentCounts(E){return this.http.post(`${this.masterURL}/getReviewOfStandardsDepartmentCounts`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getReviewOfStandardsList(E){return this.http.post(`${this.masterURL}/getReviewOfStandardsList`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getRevisedStandardsCommitteeCount(E){return this.http.post(`${this.masterURL}/getRevisedStandardsCommitteeCount`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getRevisedStandardsDepartmentCount(E){return this.http.post(`${this.masterURL}/getRevisedStandardsDepartmentCount`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getRevisedStandardsList(E){return this.http.post(`${this.masterURL}/getRevisedStandardsList`,E&&
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getWebsiteRecognizedSdoStandards(E={}){return this.http.post(`${this.SdoServiceUrl}/getWebsiteRecognizedSdoStandards`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}getWebsiteSdostandardsdetails(E){return this.http.post(`${this.SdoServiceUrl}/getWebsiteSdostandardsdetails`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: })}verifyExcelDownloadPermission(E){return this.http.post(`${this.reviewServiceURL}/verifyExcelDownloadPermission`,E,{...this.httpOptions,observe:
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: },this.specialization=[],this.experienceDetails=[],this.educationDetails=[],this.roleDeptMappings=[],this.otherRoleMappings=[],this.otherRoleGroups=[],this.hasOtherRoles=!1,this.displayOrgName=
+
+FILE: https://standards.bis.gov.in/main.f7e76eff3af0f234.js
+STRING: }getDobOrYob(){const l=this.userDetails?.dtOfBirth||this.personalDetails?.dtOfBirth;if(l){const p=new Date(l);return Number.isNaN(p.getTime())?l:p.toLocaleDateString(
+
+FILE: https://standards.bis.gov.in/zone.js
+STRING: >BIS - Bureau of Indian Standards</title>
+  <meta charset=
+
+FILE: https://standards.bis.gov.in/zone.js
+STRING: re BIS, The National Standards Body of India. We develop &amp; publish Indian Standards, Implement Conformity Assessment Schemes, Recognise &amp; run laboratories

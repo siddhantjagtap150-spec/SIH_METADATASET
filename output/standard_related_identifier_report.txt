@@ -1,0 +1,430 @@
+BIS RELATED STANDARD IDENTIFIER FLOW REPORT
+============================================
+
+Scope
+-----
+Test standard:
+- raw standardId: 67073
+- standardNumber: IS 19863 (Part 1):2026
+
+Official code inspected:
+- main.f7e76eff3af0f234.js
+- 646.c3df0e0b4ae6d826.js
+- Angular runtime lazy-chunk mapping
+
+No identifiers were decrypted. No bulk collection was started. No dataset files were modified.
+
+1. CONFIRMED ROUTE FLOW
+-----------------------
+The standards list/detail navigation code uses the encrypted field from the list/detail record:
+
+routerLink: ../standard-details
+queryParams:
+{
+  "encryptedId": record.standardEncId,
+  "standardNumber": record.standardNumber
+}
+
+The detail component reads:
+this.standardId = route.snapshot.queryParams.encryptedId || route.snapshot.paramMap.get("encryptedId")
+
+No transform or decryption is applied at this point. The value remains the opaque standardEncId string.
+
+The detail component then reuses this.standardId for its related calls. Therefore the frontend identifier flow is:
+
+raw list record standardEncId
+-> encryptedId route query parameter
+-> detail component this.standardId
+-> related endpoint payload identifier
+
+The primary detail service also accepts the opaque route value:
+getStandardDetailsById(E) sends {"StandardId": E}.
+A live test with the exact opaque standardEncId for 67073 returned HTTP 200 and SUCCESS.
+
+2. IDENTIFIER DEFINITIONS
+-------------------------
+standardId:
+- Numeric BIS standard ID from the list/detail response.
+- Used by the initial discovery/test call and accepted by the primary endpoint.
+- Not the value used by the public frontend route after list navigation.
+
+standardEncId:
+- Opaque/encrypted string returned by the primary detail response and used by list navigation.
+- Passed unchanged as the route encryptedId value.
+- Passed unchanged as this.standardId to the related detail calls.
+- No decryption was performed.
+
+standardEncIId:
+- Opaque/encrypted string returned by the primary detail response.
+- No use for the listed related calls was found in the inspected frontend path.
+
+reviewId:
+- Opaque/encrypted review reference returned by the primary response.
+- The inspected detail component does not use reviewId for its normal related calls; it uses this.standardId, which came from standardEncId.
+
+departmentId / departmentEncId:
+- Department identifiers returned as metadata.
+- Not used as the standard identifier for the related endpoints traced here.
+
+committeeId / committeeEncId:
+- Committee identifiers returned as metadata.
+- Not used as the standard identifier for the related endpoints traced here.
+
+3. PRIMARY DETAIL ENDPOINT
+--------------------------
+Endpoint:
+POST https://standardsadmin.bis.gov.in/proposal-service//getStandardsWithDeptAndCommittee
+
+Frontend method:
+getStandardDetailsById(E)
+
+Exact frontend payload:
+{
+  "StandardId": E
+}
+
+Tested forms:
+- {"StandardId": 67073}: HTTP 200, SUCCESS, 1537 bytes.
+- {"StandardId": <opaque standardEncId>}: HTTP 200, SUCCESS, 1537 bytes.
+
+The opaque value was passed unchanged. It was not decrypted.
+
+Response top-level fields:
+- status
+- statusCode
+- msg
+- data
+
+The detail object fields are:
+- standardId
+- pk_is_id
+- standardEncId
+- standardEncIId
+- standardNumber
+- standardName
+- departmentId
+- departmentEncId
+- committeeId
+- committeeEncId
+- deptPreparedName
+- secCommitteePreparedName
+- reviewId
+
+Pagination:
+- None.
+
+4. ENDPOINT GROUP A: REVIEW / LIFECYCLE
+---------------------------------------
+A1. getWebsiteStandardDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getWebsiteStandardDetails
+
+Frontend call:
+getProjectDetailsByReviewId({encId: this.standardId, fromPage: "guestUserPage"})
+
+Expected identifier:
+- standardEncId
+
+Source field:
+- primary detail response data[].standardEncId
+- route query parameter encryptedId
+- detail component this.standardId
+
+Transformation:
+- none; opaque value is passed unchanged
+
+Exact payload:
+{
+  "encId": <opaque standardEncId>,
+  "fromPage": "guestUserPage"
+}
+
+Test with standardEncId from standardId 67073:
+- HTTP 200
+- Response top-level fields: status, statusCode, msg, data
+- data is an object
+- Important returned fields include:
+  ministryName, riskNameName, standardId, rowStandardId, pk_is_id,
+  standardName, standardNumber, publishedOn, committeeId, departmentId,
+  groupName, subGroupName, subSubGroupName, sectorName, subSectorName,
+  subSubSectorName, noOfRevision, noOfAmendment, typeOfStandardId,
+  degreeOfEquivalenceId, languageId, icsCode, shortTitle,
+  certificationName, equivalenceTypeName, supersheed, orgTypeName,
+  goalNames, reAffirmationYear, commentCount, equivalenceId,
+  is_documents, is_hindi_document, equivalentIs, identical_is,
+  reviewOn, source, withdrawStatus, withdrawOn, isStatus,
+  superseded_byis, projectStageName, memberDisplayName, committeeName,
+  departmentName, deptAliasName, committeePreparedName, deptPreparedName,
+  reviewList
+- Pagination: none shown.
+
+A2. getWebsiteReviewLifeCycleList
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getWebsiteReviewLifeCycleList
+
+Frontend call:
+getlifeCycle({standardId: this.standardId, fromPage: "guestUserPage"})
+
+Expected identifier:
+- standardEncId
+
+Exact payload:
+{
+  "standardId": <opaque standardEncId>,
+  "fromPage": "guestUserPage"
+}
+
+Test with the opaque standardEncId:
+- HTTP 200
+- Response: {"status":"SUCCESS","statusCode":200,"msg":"Record fetched successfully.","data":[]}
+- Pagination: none shown.
+
+5. ENDPOINT GROUP B: STANDARD HISTORY
+-------------------------------------
+B1. getAmendmentDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getAmendmentDetails
+
+Frontend call:
+getAmendmentDetails({standardId: this.standardId})
+
+Expected identifier: standardEncId
+Source field: primary data[].standardEncId -> route encryptedId -> this.standardId
+Transformation: none
+Payload:
+{"standardId": <opaque standardEncId>}
+
+Test with opaque standardEncId:
+- HTTP 200
+- Response top-level fields: status, statusCode, msg, totalAmendments, data
+- Tested response: totalAmendments=0, data=[]
+- Pagination: none shown.
+
+B2. getGazettedetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getGazettedetails
+
+Frontend call observed:
+getGazetteDetails({standardId: this.standardId})
+
+Expected identifier: standardEncId
+Payload:
+{"standardId": <opaque standardEncId>}
+
+The exact call site was observed in the detail component. No separate test was needed after the identifier flow was confirmed; the endpoint uses the same this.standardId source.
+
+B3. getCorrigendumDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getCorrigendumDetails
+
+Frontend service implementation wraps the argument as {standardId: E}; the component passes this.standardId.
+
+Expected identifier: standardEncId
+Payload:
+{"standardId": <opaque standardEncId>}
+
+Test:
+- HTTP 200
+- Response: status SUCCESS, statusCode 200, msg "No Data Found", data=[], total_count=0
+- Pagination: none shown.
+
+B4. getSummaryDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getSummaryDetails
+
+Expected identifier: standardEncId
+Payload:
+{"standardId": <opaque standardEncId>}
+
+Test:
+- HTTP 200
+- Response: status SUCCESS, statusCode 200, msg "No Data Found", data=null
+- Pagination: none shown.
+
+6. ENDPOINT GROUP C: CROSS REFERENCES
+-------------------------------------
+getCrossRefDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getCrossRefDetails
+
+Frontend call:
+getcrcrossRefDetailsByReviewId({encId: this.standardId, fromPage: "guestUserPage"})
+
+Expected identifier: standardEncId
+Source field: primary data[].standardEncId -> route encryptedId -> this.standardId
+Transformation: none
+
+Exact payload:
+{
+  "encId": <opaque standardEncId>,
+  "fromPage": "guestUserPage"
+}
+
+Test:
+- HTTP 200
+- Response top-level fields: status, statusCode, msg, data
+- data fields: crossRefData, crossFollowRefData
+- Tested values: both arrays empty
+- Pagination: none shown.
+
+7. ENDPOINT GROUP D: CONFORMITY / CERTIFICATION
+------------------------------------------------
+D1. getStandardLicenseDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getStandardLicenseDetails
+
+Expected identifier: standardEncId
+Payload from frontend:
+{
+  "standardId": <opaque standardEncId>,
+  "status": <licenseStatusFilter>,
+  "page": 1,
+  "limit": 1,
+  "searchText": ""
+}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data, pagination
+- pagination fields: totalRecord, totalPages, currentPage, pageSize, firstPage, lastPage, numberOfElements
+- Tested data=[] and totalRecord=0
+
+D2. getStandardCRSDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getStandardCRSDetails
+
+Expected identifier: standardEncId
+Payload:
+{
+  "standardId": <opaque standardEncId>,
+  "status": <crsStatusFilter>,
+  "page": 1,
+  "limit": 1,
+  "searchText": ""
+}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data, pagination
+- pagination fields: totalRecord, totalPages, currentPage, pageSize, firstPage, lastPage, numberOfElements
+- Tested data=[] and totalRecord=0
+
+D3. getStandardMCSDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getStandardMCSDetails
+
+Expected identifier: standardEncId
+Payload:
+{
+  "standardId": <opaque standardEncId>,
+  "page": 1,
+  "limit": 1,
+  "searchText": ""
+}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data, pagination
+- pagination fields: totalRecord, totalPages, currentPage, pageSize, firstPage, lastPage, numberOfElements
+- Tested data=[] and totalRecord=0
+
+8. ENDPOINT GROUP E: LABORATORY / DOCUMENTATION
+------------------------------------------------
+E1. getStandardLaboratoryDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getStandardLaboratoryDetails
+
+Expected identifier: standardEncId
+Payload:
+{
+  "standardId": <opaque standardEncId>,
+  "page": 1,
+  "limit": 1,
+  "searchText": ""
+}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data, pagination
+- pagination fields: totalRecord, totalPages, currentPage, pageSize, firstPage, lastPage, numberOfElements
+- Tested data=[] and totalRecord=0
+
+E2. getProductManualDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getProductManualDetails
+
+Expected identifier: standardEncId
+Frontend service implementation sends {standardId: E}; E is this.standardId.
+
+Payload:
+{"standardId": <opaque standardEncId>}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data
+- data fields: status, message, product_manuals_details, total_count
+- Tested product_manuals_details=[] and total_count=0
+- Pagination: none shown.
+
+E3. getStandardFormatDocumentDetails
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/review-service/getStandardFormatDocumentDetails
+
+Expected identifier: standardEncId
+Payload:
+{"standardId": <opaque standardEncId>}
+
+Test:
+- HTTP 200 with opaque standardEncId
+- Response top-level fields: status, statusCode, msg, data, total_count
+- Tested data=[] and total_count=0
+- Pagination: no page fields shown.
+
+9. IMPORTANT IDENTIFIER CONCLUSION
+----------------------------------
+The raw numeric standardId is suitable for the initial primary lookup tested by this investigation:
+{"StandardId": 67073}
+
+The public portal route does not use that numeric value. It uses:
+primary response data[].standardEncId
+-> query parameter encryptedId
+-> detail component this.standardId
+-> related request payload
+
+The related endpoints rejected the raw numeric standardId but returned successful responses when sent the opaque standardEncId. This confirms that the opaque value is not merely decorative; it is the expected related-endpoint identifier.
+
+No opaque identifier was decrypted. No equivalence between standardEncId, standardEncIId, and reviewId was inferred. The frontend explicitly uses standardEncId for the route and related calls; reviewId is returned metadata but is not the source used by these normal detail-component calls.
+
+10. FINAL TABLE
+---------------
+ENDPOINT | IDENTIFIER | SOURCE FIELD | TRANSFORMATION | TEST RESULT
+
+getStandardsWithDeptAndCommittee | StandardId | raw standardId for direct lookup, or route standardEncId in frontend flow | none | HTTP 200 SUCCESS
+getWebsiteStandardDetails | encId | standardEncId -> encryptedId -> this.standardId | none | HTTP 200 SUCCESS; full metadata object
+getWebsiteReviewLifeCycleList | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; data=[]
+getAmendmentDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; totalAmendments=0
+getGazettedetails | standardId | standardEncId -> this.standardId | none | frontend trace; not separately called
+getCrossRefDetails | encId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; empty cross-reference arrays
+getStandardLicenseDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; paginated empty data
+getStandardCRSDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; paginated empty data
+getStandardMCSDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; paginated empty data
+getStandardLaboratoryDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; paginated empty data
+getProductManualDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; no data
+getCorrigendumDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; no data
+getSummaryDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; data=null
+getStandardFormatDocumentDetails | standardId | standardEncId -> this.standardId | none | HTTP 200 SUCCESS; no data
+
+All tests used only standard 67073 and its returned opaque standardEncId. No bulk collection was started.

@@ -1,0 +1,11 @@
+{
+  "total standards": 12223,
+  "validation limit": 5,
+  "completed primary details": 0,
+  "completed related endpoint calls": 0,
+  "failed primary details": 5,
+  "failed related calls": 0,
+  "last processed standardId": 21395,
+  "start time": "2026-09-15T14:58:18.151178+00:00",
+  "last update time": "2026-09-15T14:58:21.041914+00:00"
+}

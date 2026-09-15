@@ -1,0 +1,40 @@
+BIS STANDARD ENRICHMENT VALIDATION REPORT
+===========================================
+
+Validation batch size: 5
+The collector was intentionally stopped after the first five standards.
+
+standardId: 21357
+standardNumber: IS/ISO 10823:2004
+primary detail success: False
+standardEncId present: False
+raw files created:
+- output\raw_standard_details\21357.json
+
+standardId: 21404
+standardNumber: SI B2410:2011
+primary detail success: False
+standardEncId present: False
+raw files created:
+- output\raw_standard_details\21404.json
+
+standardId: 21390
+standardNumber: SI B2410:2011
+primary detail success: False
+standardEncId present: False
+raw files created:
+- output\raw_standard_details\21390.json
+
+standardId: 21389
+standardNumber: SI B2411:2011
+primary detail success: False
+standardEncId present: False
+raw files created:
+- output\raw_standard_details\21389.json
+
+standardId: 21395
+standardNumber: SI B2412:2011
+primary detail success: False
+standardEncId present: False
+raw files created:
+- output\raw_standard_details\21395.json

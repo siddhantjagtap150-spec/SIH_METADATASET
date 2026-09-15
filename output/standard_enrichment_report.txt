@@ -1,0 +1,10 @@
+BIS STANDARD ENRICHMENT REPORT
+==============================
+
+Total input standards: 12223
+Validation standards processed: 5
+Primary details successful: 0
+Primary details failed: 5
+Related endpoint calls successful: 0
+Related endpoint calls failed: 0
+Collection stopped after the five-standard validation batch.

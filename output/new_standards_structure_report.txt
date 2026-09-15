@@ -1,0 +1,150 @@
+BIS NEW STANDARDS RAW STRUCTURE REPORT
+=======================================
+
+Input file:
+output/new_standards_raw.json
+
+Analysis scope:
+This report analyzes the existing raw response only. No source data was transformed, and standards.json was not modified.
+
+1. FILE ROOT STRUCTURE
+----------------------
+Root type: object
+Root keys:
+- source
+- endpoint
+- total_departments
+- departments
+
+Source: Bureau of Indian Standards
+Endpoint: https://standardsadmin.bis.gov.in/master-service/getNewStandardsList
+Departments in file: 18
+
+2. DEPARTMENT-BY-DEPARTMENT SUMMARY
+------------------------------------
+HTTP status is not stored in the raw file. Each embedded response contains status=SUCCESS. The API run that produced this file returned HTTP 200 for each request.
+
+All departments have these response keys:
+- status
+- data
+- pagination
+- msg
+
+All departments returned 10 records in the saved file, which is the API page size.
+
+Department ID | Status  | Records returned | Pagination current_page | per_page | total available | last_page
+--------------|---------|------------------|-------------------------|----------|-----------------|----------
+0             | SUCCESS | 10               | 1                       | 10       | 23              | 3
+107           | SUCCESS | 10               | 1                       | 10       | 170             | 17
+109           | SUCCESS | 10               | 1                       | 10       | 245             | 25
+110           | SUCCESS | 10               | 1                       | 10       | 107             | 11
+21            | SUCCESS | 10               | 1                       | 10       | 387             | 39
+61            | SUCCESS | 10               | 1                       | 10       | 1070            | 107
+62            | SUCCESS | 10               | 1                       | 10       | 827             | 83
+63            | SUCCESS | 10               | 1                       | 10       | 879             | 88
+64            | SUCCESS | 10               | 1                       | 10       | 1246            | 125
+65            | SUCCESS | 10               | 1                       | 10       | 1172            | 118
+66            | SUCCESS | 10               | 1                       | 10       | 1184            | 119
+67            | SUCCESS | 10               | 1                       | 10       | 762             | 77
+68            | SUCCESS | 10               | 1                       | 10       | 693             | 70
+69            | SUCCESS | 10               | 1                       | 10       | 603             | 61
+70            | SUCCESS | 10               | 1                       | 10       | 690             | 69
+71            | SUCCESS | 10               | 1                       | 10       | 694             | 70
+72            | SUCCESS | 10               | 1                       | 10       | 195             | 20
+74            | SUCCESS | 10               | 1                       | 10       | 1276            | 128
+
+3. ACTUAL STANDARD RECORD FIELDS
+--------------------------------
+The record keys found are:
+- equivalenceTypeName
+- is_documents
+- publishedOn
+- standardId
+- standardName
+- standardNumber
+- typeOfStandardName
+
+One actual record:
+{
+  "standardId": 21357,
+  "standardNumber": "IS/ISO 10823:2004",
+  "publishedOn": "2011-08-31",
+  "standardName": "Guidelines for the selection of roller chain drives",
+  "typeOfStandardName": "-",
+  "equivalenceTypeName": "-",
+  "is_documents": null
+}
+
+4. FIELD AVAILABILITY
+---------------------
+Field or concept                         Present?       Evidence
+---------------------------------------- --------------- -------------------------------
+pagination                               YES             response.pagination
+Total record count                       YES             response.pagination.total
+Page number                              YES             response.pagination.current_page
+Page size                                YES             response.pagination.per_page
+Standard number                          YES             record.standardNumber
+Standard title                           YES             record.standardName
+Publication date                         YES             record.publishedOn
+Revision information                     NO              No explicit revision field found
+Department                               PARTIAL         departmentId exists at container level; no department field in records
+Committee                                NO              No committee field found
+Classification                           NO              No explicit classification field found
+Mandatory/voluntary certification info   NO              No such field found
+IDs for standard details                 YES             record.standardId and record.standardNumber
+
+The record field typeOfStandardName is present and may be a category/type label, but this report does not infer that it is a complete classification field.
+
+5. RECORD COUNTS
+----------------
+Actual records stored in this file: 180
+Calculation: 18 departments x 10 records returned per department = 180
+
+Pagination totals reported by the API across all departments: 12223
+This is the number of available records reported by the API, not the number stored in this raw file.
+
+6. DUPLICATE CHECK
+------------------
+Exact duplicate record objects across departments: none found.
+
+Duplicate standard numbers found:
+- SI B2410:2011 appears twice, both under departmentId 0.
+
+No other duplicate standard-number value was found in the analyzed records. The duplicate value is reported as-is; no records were removed or changed.
+
+7. THREE COMPLETE EXAMPLE RECORDS
+----------------------------------
+Example 1, departmentId 0:
+{
+  "standardId": 21357,
+  "standardNumber": "IS/ISO 10823:2004",
+  "publishedOn": "2011-08-31",
+  "standardName": "Guidelines for the selection of roller chain drives",
+  "typeOfStandardName": "-",
+  "equivalenceTypeName": "-",
+  "is_documents": null
+}
+
+Example 2, departmentId 107:
+{
+  "standardId": 67073,
+  "standardNumber": "IS 19863 (Part 1):2026",
+  "publishedOn": "2026-07-03",
+  "standardName": "Financial services -Financial information eXchange session layer -Part 1: FIX tagvalue encoding",
+  "typeOfStandardName": "Service Specification",
+  "equivalenceTypeName": "Identical under dual numbering",
+  "is_documents": "BisProd/bisProd/projects/proof/2026/07/548_1783933822.pdf"
+}
+
+Example 3, departmentId 109:
+{
+  "standardId": 67153,
+  "standardNumber": "IS 19897:2026",
+  "publishedOn": "2026-08-03",
+  "standardName": "Homoeopathic Mother Tinctures (Hydro-Alcoholic Extracts) — Test Methods",
+  "typeOfStandardName": "Methods of Tests",
+  "equivalenceTypeName": "Indigenous",
+  "is_documents": "BisProd/bisProd/projects/proof/2026/08/116_1786681832.pdf"
+}
+
+END OF REPORT

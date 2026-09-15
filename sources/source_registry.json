@@ -1,0 +1,544 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIS Knowledge Base Source Registry",
+  "description": "Registry defining authoritative sources permitted for constructing and verifying the BIS knowledge base.",
+  "version": "1.0.0",
+
+  "source_policy": {
+    "primary_authority": "Bureau of Indian Standards",
+    "country": "India",
+
+    "source_priority": [
+      {
+        "priority": 1,
+        "source_class": "bis_official",
+        "description": "Official Bureau of Indian Standards websites, pages, portals and databases."
+      },
+      {
+        "priority": 2,
+        "source_class": "government_of_india",
+        "description": "Official Government of India sources relevant to BIS regulation and mandatory requirements."
+      },
+      {
+        "priority": 3,
+        "source_class": "official_gazette",
+        "description": "Official Gazette notifications and legally published regulatory documents."
+      },
+      {
+        "priority": 4,
+        "source_class": "government_ministry",
+        "description": "Official ministries/departments issuing BIS-related orders, QCOs, notifications or regulatory directions."
+      }
+    ],
+
+    "secondary_sources_allowed": false,
+    "fabricated_information_allowed": false,
+    "unsupported_claims_allowed": false,
+    "unverified_records_allowed": false,
+
+    "every_record_requires_source": true,
+    "every_regulatory_record_requires_official_source": true,
+    "every_fee_requires_source": true,
+    "every_date_requires_source": true,
+    "every_contact_requires_source": true,
+    "every_relationship_requires_source": true,
+
+    "source_url_required": true,
+    "last_verified_required": true,
+
+    "historical_sources_allowed": true,
+    "superseded_sources_should_be_preserved": true
+  },
+
+  "source_classes": [
+
+    {
+      "source_class_id": "bis_official",
+      "name": "BIS Official",
+      "authority_level": "highest",
+      "allowed": true,
+      "examples": [
+        "BIS official website",
+        "BIS official portals",
+        "BIS official databases",
+        "BIS official downloadable documents"
+      ]
+    },
+
+    {
+      "source_class_id": "government_of_india",
+      "name": "Government of India",
+      "authority_level": "highest",
+      "allowed": true,
+      "examples": [
+        "Government of India departments",
+        "official government portals",
+        "official government publications"
+      ]
+    },
+
+    {
+      "source_class_id": "official_gazette",
+      "name": "Official Gazette",
+      "authority_level": "highest",
+      "allowed": true,
+      "examples": [
+        "Gazette notifications",
+        "statutory notifications",
+        "official regulatory publications"
+      ]
+    },
+
+    {
+      "source_class_id": "government_ministry",
+      "name": "Government Ministry or Department",
+      "authority_level": "highest",
+      "allowed": true,
+      "examples": [
+        "Ministry-issued QCOs",
+        "Ministry notifications",
+        "Ministry orders",
+        "Departmental directions"
+      ]
+    },
+
+    {
+      "source_class_id": "international_standard_body",
+      "name": "International Standards Body",
+      "authority_level": "contextual",
+      "allowed": true,
+      "examples": [
+        "ISO",
+        "IEC"
+      ],
+      "usage_rule": "Use only when the information is directly relevant to a BIS-adopted or referenced international standard. BIS or Government sources remain authoritative for BIS implementation."
+    },
+
+    {
+      "source_class_id": "secondary",
+      "name": "Secondary Source",
+      "authority_level": "low",
+      "allowed": false,
+      "examples": [
+        "Kaggle",
+        "blogs",
+        "commercial websites",
+        "consultancy websites",
+        "news articles",
+        "Wikipedia",
+        "unverified social media",
+        "third-party summaries"
+      ]
+    }
+  ],
+
+  "bis_source_registry": [
+
+    {
+      "source_id": "BIS-WEB",
+      "source_name": "Bureau of Indian Standards Official Website",
+      "source_class": "bis_official",
+      "source_type": "website",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "standards",
+        "product_certification",
+        "conformity_assessment",
+        "hallmarking",
+        "laboratories",
+        "training",
+        "consumer_services",
+        "offices_and_contacts",
+        "regulatory_framework"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-STANDARDS",
+      "source_name": "BIS Standards Information",
+      "source_class": "bis_official",
+      "source_type": "portal_or_database",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "standards",
+        "indian_standards",
+        "standard_status",
+        "standard_revisions",
+        "amendments",
+        "withdrawals",
+        "draft_standards"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-PRODUCT-CERT",
+      "source_name": "BIS Product Certification",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "product_certification",
+        "scheme_i",
+        "scheme_iv",
+        "licence",
+        "application",
+        "testing",
+        "inspection",
+        "surveillance",
+        "renewal"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-SCHEME-X",
+      "source_name": "BIS Scheme-X",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "scheme_x",
+        "electrical_equipment",
+        "machinery",
+        "associated_goods",
+        "certification"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-CRS",
+      "source_name": "BIS Compulsory Registration Scheme",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "crs",
+        "electronics",
+        "it_products",
+        "registration",
+        "manufacturer_registration",
+        "testing",
+        "laboratories"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-FMCS",
+      "source_name": "BIS Foreign Manufacturers Certification Scheme",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "fmcs",
+        "foreign_manufacturers",
+        "air",
+        "factory_inspection",
+        "testing",
+        "licence",
+        "surveillance"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-HALLMARKING",
+      "source_name": "BIS Hallmarking",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "hallmarking",
+        "gold",
+        "silver",
+        "jewellers",
+        "hallmarking_centres",
+        "assaying",
+        "huid",
+        "consumer_verification"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-LABORATORIES",
+      "source_name": "BIS Laboratories",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "laboratories",
+        "testing",
+        "laboratory_recognition",
+        "testing_facilities",
+        "test_methods"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-MANAKONLINE",
+      "source_name": "BIS Online Services",
+      "source_class": "bis_official",
+      "source_type": "portal",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "online_application",
+        "licence",
+        "registration",
+        "certification",
+        "payments",
+        "digital_services"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-CARE",
+      "source_name": "BIS Consumer Services",
+      "source_class": "bis_official",
+      "source_type": "consumer_portal",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "consumer_services",
+        "complaints",
+        "licence_verification",
+        "standard_mark_verification",
+        "huid_verification",
+        "consumer_awareness"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-REGULATIONS",
+      "source_name": "BIS Acts, Rules and Regulations",
+      "source_class": "bis_official",
+      "source_type": "regulatory_repository",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "bis_act",
+        "rules",
+        "conformity_assessment_regulations",
+        "hallmarking_regulations",
+        "amendments",
+        "regulatory_framework"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-NOTIFICATIONS",
+      "source_name": "BIS Notifications, Circulars and Orders",
+      "source_class": "bis_official",
+      "source_type": "document_repository",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "notifications",
+        "circulars",
+        "orders",
+        "directions",
+        "guidelines",
+        "implementation_updates"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "BIS-TRAINING",
+      "source_name": "BIS Training Services",
+      "source_class": "bis_official",
+      "source_type": "service_page",
+      "authority_level": "highest",
+      "status": "active",
+      "url": "https://www.bis.gov.in/",
+      "covers": [
+        "training",
+        "capacity_building",
+        "standards_training",
+        "conformity_assessment_training",
+        "laboratory_training",
+        "hallmarking_training"
+      ],
+      "verification_required": true
+    }
+  ],
+
+  "government_source_registry": [
+
+    {
+      "source_id": "GOI-QCO",
+      "source_name": "Government of India Quality Control Orders",
+      "source_class": "government_ministry",
+      "source_type": "regulatory_document",
+      "authority_level": "highest",
+      "status": "active",
+      "covers": [
+        "qco",
+        "mandatory_certification",
+        "mandatory_standards",
+        "product_requirements"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "GOI-GAZETTE",
+      "source_name": "Official Gazette of India",
+      "source_class": "official_gazette",
+      "source_type": "gazette",
+      "authority_level": "highest",
+      "status": "active",
+      "covers": [
+        "notifications",
+        "orders",
+        "rules",
+        "regulations",
+        "qco",
+        "legal_requirements"
+      ],
+      "verification_required": true
+    },
+
+    {
+      "source_id": "GOI-MINISTRIES",
+      "source_name": "Government of India Ministries and Departments",
+      "source_class": "government_ministry",
+      "source_type": "government_website",
+      "authority_level": "highest",
+      "status": "active",
+      "covers": [
+        "qco",
+        "notifications",
+        "orders",
+        "regulatory_requirements"
+      ],
+      "verification_required": true
+    }
+  ],
+
+  "source_document_types": [
+    "webpage",
+    "portal",
+    "database",
+    "standard",
+    "draft_standard",
+    "amendment",
+    "notification",
+    "circular",
+    "order",
+    "guideline",
+    "manual",
+    "user_manual",
+    "application_form",
+    "checklist",
+    "undertaking",
+    "declaration",
+    "certificate",
+    "licence_document",
+    "gazette",
+    "act",
+    "rule",
+    "regulation",
+    "qco",
+    "test_method",
+    "laboratory_document",
+    "training_document",
+    "faq",
+    "other"
+  ],
+
+  "verification_status": [
+    "verified",
+    "pending_verification",
+    "superseded",
+    "withdrawn",
+    "expired",
+    "invalid",
+    "rejected"
+  ],
+
+  "temporal_rules": {
+    "track_effective_date": true,
+    "track_expiry_date": true,
+    "track_supersession": true,
+    "track_withdrawal": true,
+    "track_last_verified": true,
+
+    "rule": "When multiple official sources exist, the knowledge base should prefer the source that is legally or operationally current while retaining historical sources for temporal reasoning."
+  },
+
+  "data_quality_rules": {
+    "do_not_guess": true,
+    "do_not_infer_legal_requirements_without_evidence": true,
+    "do_not_invent_fees": true,
+    "do_not_invent_timelines": true,
+    "do_not_invent_contact_details": true,
+    "do_not_invent_standard_numbers": true,
+    "do_not_invent_qco_numbers": true,
+    "do_not_invent_product_coverage": true,
+    "do_not_invent_scheme_applicability": true,
+    "do_not_invent_laboratory_capabilities": true,
+
+    "unknown_value_policy": {
+      "allowed_values": [
+        null,
+        "unknown",
+        "not_available_in_source"
+      ],
+      "rule": "Unknown information must remain explicitly unknown instead of being guessed."
+    }
+  },
+
+  "source_record_template": {
+    "source_id": "SRC-000001",
+    "source_class": "bis_official",
+    "source_name": "",
+    "source_type": "",
+    "title": "",
+    "url": "",
+    "document_number": null,
+    "publication_date": null,
+    "effective_date": null,
+    "expiry_date": null,
+    "status": "active",
+    "organization": "Bureau of Indian Standards",
+    "department": null,
+    "section": null,
+    "page": null,
+    "language": "English",
+    "retrieval_date": "",
+    "last_verified": "",
+    "verification_status": "verified",
+    "supersedes_source_id": null,
+    "superseded_by_source_id": null,
+    "notes": ""
+  }
+}

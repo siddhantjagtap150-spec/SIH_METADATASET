@@ -1,0 +1,135 @@
+BIS NEW STANDARDS COLLECTION REPORT
+====================================
+
+Departments:
+18
+
+Configured page size:
+100
+
+For each department:
+
+departmentId: 0
+reported total: 23
+last page: 1
+pages collected: 1
+records collected: 23
+
+departmentId: 21
+reported total: 387
+last page: 4
+pages collected: 4
+records collected: 387
+
+departmentId: 61
+reported total: 1070
+last page: 11
+pages collected: 11
+records collected: 1070
+
+departmentId: 62
+reported total: 827
+last page: 9
+pages collected: 9
+records collected: 827
+
+departmentId: 63
+reported total: 879
+last page: 9
+pages collected: 9
+records collected: 879
+
+departmentId: 64
+reported total: 1246
+last page: 13
+pages collected: 13
+records collected: 1246
+
+departmentId: 65
+reported total: 1172
+last page: 12
+pages collected: 12
+records collected: 1172
+
+departmentId: 66
+reported total: 1184
+last page: 12
+pages collected: 12
+records collected: 1184
+
+departmentId: 67
+reported total: 762
+last page: 8
+pages collected: 8
+records collected: 762
+
+departmentId: 68
+reported total: 693
+last page: 7
+pages collected: 7
+records collected: 693
+
+departmentId: 69
+reported total: 603
+last page: 7
+pages collected: 7
+records collected: 603
+
+departmentId: 70
+reported total: 690
+last page: 7
+pages collected: 7
+records collected: 690
+
+departmentId: 71
+reported total: 694
+last page: 7
+pages collected: 7
+records collected: 694
+
+departmentId: 72
+reported total: 195
+last page: 2
+pages collected: 2
+records collected: 195
+
+departmentId: 74
+reported total: 1276
+last page: 13
+pages collected: 13
+records collected: 1276
+
+departmentId: 107
+reported total: 170
+last page: 2
+pages collected: 2
+records collected: 170
+
+departmentId: 109
+reported total: 245
+last page: 3
+pages collected: 3
+records collected: 245
+
+departmentId: 110
+reported total: 107
+last page: 2
+pages collected: 2
+records collected: 107
+
+Total reported records: 12223
+Total records collected: 12223
+Unique standard IDs: 12223
+Unique standard numbers: 12215
+Duplicate standard IDs: []
+Duplicate standard numbers: ["IS 10974 (Part 5):1984", "IS 12199:1987", "IS 12908:1990", "IS 15085:2001", "IS 15242:2002", "IS 6074:1971", "IS/ISO 14960 (Part 2):2014", "SI B2410:2011"]
+
+Earlier department-count endpoint total (if available): 12223
+Sum of pagination totals from getNewStandardsList: 12223
+Actual records collected: 12223
+Discrepancy: none.
+
+Validation: every department completed successfully.
+Every department reached its reported last_page.
+Collected count matches the sum of records returned.
+No page was silently skipped.

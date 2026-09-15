@@ -1,0 +1,964 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bis-knowledge-base-taxonomy-v1",
+  "title": "BIS Knowledge Base Master Taxonomy",
+  "description": "Master taxonomy defining the domains, subdomains, categories and knowledge areas to be covered by the BIS AI Assistant knowledge base.",
+  "version": "1.0.0",
+  "organization": "Bureau of Indian Standards",
+  "country": "India",
+
+  "taxonomy": {
+    "standards": {
+      "name": "Indian Standards",
+      "description": "Indian Standards developed, adopted, revised, amended, withdrawn or published by BIS.",
+      "categories": [
+        "Indian Standards",
+        "International Standards adopted by BIS",
+        "Draft Standards",
+        "Revised Standards",
+        "Amendments",
+        "Withdrawn Standards",
+        "Standards under development",
+        "Standards catalogue",
+        "Standard access and download",
+        "Standard interpretation",
+        "Standard implementation"
+      ],
+      "knowledge_areas": [
+        "standard_number",
+        "standard_title",
+        "edition",
+        "publication_date",
+        "effective_date",
+        "revision_history",
+        "amendments",
+        "scope",
+        "technical_requirements",
+        "test_methods",
+        "product_requirements",
+        "references",
+        "committee",
+        "sector",
+        "status"
+      ]
+    },
+
+    "products": {
+      "name": "Products",
+      "description": "Products covered by Indian Standards, certification schemes, QCOs and other BIS conformity assessment activities.",
+      "categories": [
+        "Consumer Products",
+        "Electrical Products",
+        "Electronic Products",
+        "IT Products",
+        "Mechanical Products",
+        "Chemical Products",
+        "Food and Agriculture Products",
+        "Building Materials",
+        "Cement and Construction Products",
+        "Automotive Products",
+        "Medical Products",
+        "Textiles",
+        "Steel and Metal Products",
+        "Petroleum Products",
+        "Water and Plumbing Products",
+        "Machinery",
+        "Safety Equipment",
+        "Household Products",
+        "Packaging Products",
+        "Environmental Products",
+        "Jewellery and Precious Metal Articles",
+        "Other BIS-regulated Products"
+      ],
+      "knowledge_areas": [
+        "product_name",
+        "product_code",
+        "product_category",
+        "applicable_standard",
+        "certification_requirement",
+        "mandatory_status",
+        "QCO",
+        "certification_scheme",
+        "testing_requirement",
+        "laboratory",
+        "technical_requirements",
+        "documents",
+        "application",
+        "licence",
+        "renewal"
+      ]
+    },
+
+    "conformity_assessment": {
+      "name": "Conformity Assessment",
+      "description": "BIS conformity assessment framework, schemes, procedures and requirements.",
+      "categories": [
+        "Scheme-I Product Certification",
+        "Scheme-II Compulsory Registration Scheme",
+        "Scheme-III Management Systems Certification",
+        "Scheme-IV Certificate of Conformity",
+        "Scheme-VI Special Conformity Assessment",
+        "Scheme-VII Registration",
+        "Scheme-VIII Hallmarking",
+        "Scheme-IX Other Conformity Assessment",
+        "Scheme-X Product Certification",
+        "Self Declaration of Conformity",
+        "Licence to use Standard Mark",
+        "Certificate of Conformity",
+        "Certification of Lot",
+        "Inspection",
+        "Surveillance"
+      ],
+      "knowledge_areas": [
+        "scheme_number",
+        "scheme_name",
+        "applicability",
+        "eligibility",
+        "requirements",
+        "application",
+        "assessment",
+        "testing",
+        "inspection",
+        "surveillance",
+        "certification",
+        "renewal",
+        "suspension",
+        "cancellation",
+        "appeal",
+        "fees"
+      ]
+    },
+
+    "product_certification": {
+      "name": "Product Certification",
+      "description": "BIS certification of products against applicable Indian Standards.",
+      "categories": [
+        "Domestic Manufacturer Certification",
+        "ISI Mark",
+        "Scheme-I",
+        "Scheme-IV",
+        "Scheme-X",
+        "Product Specific Certification",
+        "Simplified Procedure",
+        "Normal Procedure",
+        "Special Product Certification",
+        "Lot Inspection"
+      ],
+      "knowledge_areas": [
+        "eligibility",
+        "manufacturing_facility",
+        "quality_control",
+        "process_control",
+        "testing_capability",
+        "application",
+        "factory_inspection",
+        "sample_testing",
+        "licence",
+        "standard_mark",
+        "marking_fee",
+        "annual_fee",
+        "surveillance",
+        "renewal",
+        "scope_extension",
+        "scope_reduction",
+        "suspension",
+        "cancellation"
+      ]
+    },
+
+    "compulsory_certification": {
+      "name": "Compulsory Certification",
+      "description": "Products for which compliance with Indian Standards is made mandatory through applicable government orders or statutory provisions.",
+      "categories": [
+        "Products under Compulsory Certification",
+        "Mandatory BIS Certification",
+        "Mandatory Standard Mark",
+        "Government Notifications",
+        "Statutory Requirements"
+      ],
+      "knowledge_areas": [
+        "product",
+        "applicable_standard",
+        "mandatory_reason",
+        "effective_date",
+        "manufacturer_requirement",
+        "importer_requirement",
+        "registration_requirement",
+        "licence_requirement",
+        "exceptions",
+        "transition_period",
+        "enforcement"
+      ]
+    },
+
+    "qco": {
+      "name": "Quality Control Orders",
+      "description": "Government Quality Control Orders making compliance with specified Indian Standards mandatory for specified products.",
+      "categories": [
+        "Central Government QCOs",
+        "Ministry-wise QCOs",
+        "Product-specific QCOs",
+        "Amended QCOs",
+        "Withdrawn QCOs",
+        "Draft QCOs",
+        "QCO Implementation"
+      ],
+      "knowledge_areas": [
+        "QCO_number",
+        "ministry",
+        "department",
+        "product",
+        "Indian_Standard",
+        "mandatory_status",
+        "notification_date",
+        "effective_date",
+        "implementation_date",
+        "exceptions",
+        "exemptions",
+        "manufacturer_requirements",
+        "import_requirements",
+        "certification_scheme",
+        "amendments",
+        "withdrawal"
+      ]
+    },
+
+    "crs": {
+      "name": "Compulsory Registration Scheme",
+      "description": "BIS registration framework for applicable electronic and IT products and other notified product categories.",
+      "categories": [
+        "Electronic Products",
+        "IT Products",
+        "CRS Product List",
+        "Registration",
+        "Recognized Laboratories",
+        "Authorized Indian Representative",
+        "Manufacturer Registration",
+        "Self Declaration"
+      ],
+      "knowledge_areas": [
+        "product",
+        "standard",
+        "registration_requirement",
+        "manufacturer",
+        "AIR",
+        "test_report",
+        "laboratory",
+        "application",
+        "registration_number",
+        "R-number",
+        "marking",
+        "renewal",
+        "modification",
+        "cancellation",
+        "fees"
+      ]
+    },
+
+    "scheme_x": {
+      "name": "Scheme-X Certification",
+      "description": "BIS certification framework for specified products including products covered by applicable Quality Control Orders.",
+      "categories": [
+        "Electrical Equipment",
+        "Machinery",
+        "Associated Goods",
+        "Safety Certification",
+        "Product Specific Guidelines",
+        "Technical File"
+      ],
+      "knowledge_areas": [
+        "product",
+        "standard",
+        "QCO",
+        "technical_file",
+        "manufacturer",
+        "application",
+        "assessment",
+        "testing",
+        "laboratory",
+        "factory_inspection",
+        "licence",
+        "surveillance",
+        "renewal"
+      ]
+    },
+
+    "fmcs": {
+      "name": "Foreign Manufacturers Certification Scheme",
+      "description": "BIS certification scheme for foreign manufacturers producing products conforming to applicable Indian Standards.",
+      "categories": [
+        "Foreign Manufacturer",
+        "Foreign Manufacturing Unit",
+        "FMCS Application",
+        "FMCS Licence",
+        "Authorized Indian Representative",
+        "Foreign Factory Inspection",
+        "Product Testing"
+      ],
+      "knowledge_areas": [
+        "eligibility",
+        "foreign_manufacturer",
+        "manufacturing_unit",
+        "AIR",
+        "Indian_Standard",
+        "application",
+        "factory_assessment",
+        "testing",
+        "laboratory",
+        "licence",
+        "standard_mark",
+        "surveillance",
+        "renewal",
+        "fees"
+      ]
+    },
+
+    "hallmarking": {
+      "name": "Hallmarking",
+      "description": "BIS hallmarking framework for precious metal articles and related registration, assaying and hallmarking activities.",
+      "categories": [
+        "Gold Hallmarking",
+        "Silver Hallmarking",
+        "Jewellers Registration",
+        "Hallmarking Centres",
+        "Assaying",
+        "HUID",
+        "Hallmark Components",
+        "Mandatory Hallmarking",
+        "Hallmarking Regulations",
+        "Hallmarking Charges",
+        "Consumer Verification"
+      ],
+      "knowledge_areas": [
+        "metal",
+        "purity",
+        "fineness",
+        "hallmark",
+        "HUID",
+        "jeweller",
+        "registration",
+        "hallmarking_centre",
+        "assaying",
+        "testing",
+        "charges",
+        "marking",
+        "verification",
+        "complaints",
+        "regulations"
+      ]
+    },
+
+    "laboratories": {
+      "name": "Laboratories and Testing",
+      "description": "BIS laboratories, recognized laboratories, empanelled laboratories and testing facilities.",
+      "categories": [
+        "BIS Laboratories",
+        "Recognized Laboratories",
+        "Empanelled Laboratories",
+        "Laboratory Recognition Scheme",
+        "Government Laboratories",
+        "Product Testing",
+        "Standard-wise Laboratory Search",
+        "Testing Facilities",
+        "Laboratory Charges"
+      ],
+      "knowledge_areas": [
+        "laboratory_name",
+        "laboratory_type",
+        "location",
+        "address",
+        "contact",
+        "recognized_status",
+        "recognition_scope",
+        "standards_supported",
+        "products_supported",
+        "test_methods",
+        "testing_facilities",
+        "validity",
+        "recognition_status"
+      ]
+    },
+
+    "testing": {
+      "name": "Testing",
+      "description": "Testing requirements, methods, facilities and reports used in BIS conformity assessment.",
+      "categories": [
+        "Product Testing",
+        "Factory Testing",
+        "Market Sample Testing",
+        "Third Party Testing",
+        "Laboratory Testing",
+        "Test Reports",
+        "Test Methods",
+        "Retesting",
+        "Sample Requirements",
+        "Testing Frequency"
+      ],
+      "knowledge_areas": [
+        "product",
+        "standard",
+        "test_method",
+        "test_parameter",
+        "sample",
+        "sample_size",
+        "test_frequency",
+        "test_report",
+        "laboratory",
+        "acceptance_criteria",
+        "retesting",
+        "testing_cost"
+      ]
+    },
+
+    "management_systems": {
+      "name": "Management Systems Certification",
+      "description": "BIS management system certification schemes.",
+      "categories": [
+        "Quality Management System",
+        "Environmental Management System",
+        "Food Safety Management System",
+        "Energy Management System",
+        "Occupational Health and Safety",
+        "Service Quality Management",
+        "HACCP",
+        "Medical Device Management",
+        "Social Accountability",
+        "Road Traffic Safety",
+        "Adventure Tourism Safety",
+        "Anti-Bribery Management",
+        "Information Security Management",
+        "Educational Organizations Management",
+        "Other Management Systems"
+      ],
+      "knowledge_areas": [
+        "system",
+        "applicable_standard",
+        "eligibility",
+        "application",
+        "audit",
+        "assessment",
+        "certification",
+        "surveillance",
+        "renewal",
+        "scope",
+        "fees"
+      ]
+    },
+
+    "standards_development": {
+      "name": "Standards Development",
+      "description": "Development, revision, adoption and maintenance of Indian Standards.",
+      "categories": [
+        "Technical Committees",
+        "Sectional Committees",
+        "Subcommittees",
+        "Working Groups",
+        "Standards Development Process",
+        "Draft Standards",
+        "Public Comments",
+        "Revision",
+        "Amendment",
+        "Withdrawal",
+        "International Standard Adoption"
+      ],
+      "knowledge_areas": [
+        "committee",
+        "committee_code",
+        "scope",
+        "members",
+        "standard_development",
+        "draft",
+        "comments",
+        "approval",
+        "revision",
+        "amendment",
+        "withdrawal"
+      ]
+    },
+
+    "regulatory_framework": {
+      "name": "BIS Legal and Regulatory Framework",
+      "description": "Acts, rules, regulations, notifications, amendments and statutory documents governing BIS activities.",
+      "categories": [
+        "BIS Act",
+        "BIS Rules",
+        "Conformity Assessment Regulations",
+        "Hallmarking Regulations",
+        "Advisory Committee Regulations",
+        "Amendment Regulations",
+        "Government Notifications",
+        "Gazette Notifications",
+        "Orders",
+        "Circulars",
+        "Guidelines",
+        "Directions",
+        "Enforcement Provisions"
+      ],
+      "knowledge_areas": [
+        "document_title",
+        "document_number",
+        "document_type",
+        "issuing_authority",
+        "date",
+        "effective_date",
+        "amendment",
+        "supersedes",
+        "legal_scope",
+        "applicability",
+        "requirements",
+        "penalties"
+      ]
+    },
+
+    "procedures": {
+      "name": "BIS Procedures",
+      "description": "Step-by-step procedures for BIS services and conformity assessment activities.",
+      "categories": [
+        "Application",
+        "Certification",
+        "Registration",
+        "Testing",
+        "Inspection",
+        "Assessment",
+        "Renewal",
+        "Modification",
+        "Scope Extension",
+        "Scope Reduction",
+        "Suspension",
+        "Cancellation",
+        "Appeal",
+        "Complaint"
+      ],
+      "knowledge_areas": [
+        "procedure_name",
+        "eligibility",
+        "steps",
+        "documents",
+        "fees",
+        "portal",
+        "timeline",
+        "assessment",
+        "decision",
+        "outcome"
+      ]
+    },
+
+    "fees": {
+      "name": "BIS Fees and Charges",
+      "description": "Official BIS fees, charges, marking fees, testing charges and other applicable payments.",
+      "categories": [
+        "Application Fee",
+        "Inspection Fee",
+        "Testing Fee",
+        "Annual Licence Fee",
+        "Marking Fee",
+        "Renewal Fee",
+        "Registration Fee",
+        "Hallmarking Charges",
+        "Laboratory Charges",
+        "Training Fee",
+        "Other Charges"
+      ],
+      "knowledge_areas": [
+        "fee_type",
+        "amount",
+        "currency",
+        "unit",
+        "applicability",
+        "conditions",
+        "effective_date",
+        "payment_method",
+        "source"
+      ]
+    },
+
+    "renewal_and_licence_management": {
+      "name": "Licence and Registration Management",
+      "description": "Lifecycle management of BIS licences, certificates and registrations.",
+      "categories": [
+        "Grant",
+        "Validity",
+        "Renewal",
+        "Extension",
+        "Modification",
+        "Scope Change",
+        "Suspension",
+        "Restoration",
+        "Cancellation",
+        "Expiry",
+        "Deferment"
+      ],
+      "knowledge_areas": [
+        "licence",
+        "certificate",
+        "registration",
+        "validity",
+        "renewal_period",
+        "conditions",
+        "fees",
+        "documents",
+        "application",
+        "suspension",
+        "cancellation"
+      ]
+    },
+
+    "surveillance_and_enforcement": {
+      "name": "Surveillance and Enforcement",
+      "description": "BIS factory, market and licence surveillance and enforcement activities.",
+      "categories": [
+        "Factory Surveillance",
+        "Market Surveillance",
+        "Inspection",
+        "Sample Drawal",
+        "Testing",
+        "Non-Conformity",
+        "Unsatisfactory Performance",
+        "Enforcement",
+        "Search and Seizure",
+        "Penalties",
+        "Licence Cancellation"
+      ],
+      "knowledge_areas": [
+        "activity",
+        "trigger",
+        "frequency",
+        "sample",
+        "inspection",
+        "non_conformity",
+        "corrective_action",
+        "penalty",
+        "enforcement_action",
+        "appeal"
+      ]
+    },
+
+    "consumer_services": {
+      "name": "Consumer Services",
+      "description": "BIS services and information intended for consumers and the public.",
+      "categories": [
+        "BIS CARE",
+        "Product Verification",
+        "Licence Verification",
+        "HUID Verification",
+        "Standard Mark Verification",
+        "Consumer Awareness",
+        "Consumer Guidance",
+        "Complaints",
+        "Grievances",
+        "Public Hearings",
+        "Consumer Information"
+      ],
+      "knowledge_areas": [
+        "service",
+        "eligibility",
+        "procedure",
+        "verification",
+        "complaint",
+        "contact",
+        "portal",
+        "timeline"
+      ]
+    },
+
+    "complaints_and_grievances": {
+      "name": "Complaints and Grievances",
+      "description": "Mechanisms for reporting BIS-related complaints, violations, grievances and public concerns.",
+      "categories": [
+        "Product Complaint",
+        "BIS Mark Misuse",
+        "Counterfeit Mark",
+        "Quality Complaint",
+        "Hallmark Complaint",
+        "Consumer Complaint",
+        "Licence Complaint",
+        "Grievance",
+        "Appeal",
+        "Public Hearing"
+      ],
+      "knowledge_areas": [
+        "complaint_type",
+        "eligibility",
+        "submission_method",
+        "required_information",
+        "documents",
+        "portal",
+        "contact",
+        "resolution_process",
+        "escalation"
+      ]
+    },
+
+    "training": {
+      "name": "Training and Capacity Building",
+      "description": "BIS training, educational and capacity-building programmes.",
+      "categories": [
+        "Certification Training",
+        "Conformity Assessment Training",
+        "Laboratory Training",
+        "Hallmarking Training",
+        "Standards Development Training",
+        "Consumer Awareness",
+        "Management Systems Training",
+        "International Training",
+        "Open Programmes",
+        "In-house Programmes"
+      ],
+      "knowledge_areas": [
+        "programme",
+        "topic",
+        "target_audience",
+        "eligibility",
+        "duration",
+        "location",
+        "mode",
+        "schedule",
+        "fees",
+        "registration",
+        "certificate"
+      ]
+    },
+
+    "offices_and_contacts": {
+      "name": "BIS Offices and Contacts",
+      "description": "BIS headquarters, regional offices, branch offices and service contacts.",
+      "categories": [
+        "Headquarters",
+        "Regional Offices",
+        "Branch Offices",
+        "Laboratories",
+        "Department Contacts",
+        "Service Contacts",
+        "Grievance Contacts"
+      ],
+      "knowledge_areas": [
+        "office_name",
+        "office_type",
+        "address",
+        "city",
+        "state",
+        "region",
+        "phone",
+        "email",
+        "services",
+        "jurisdiction",
+        "working_hours"
+      ]
+    },
+
+    "documents_and_forms": {
+      "name": "BIS Documents and Forms",
+      "description": "Official BIS forms, manuals, guidelines, product manuals and supporting documents.",
+      "categories": [
+        "Application Forms",
+        "Guidelines",
+        "Product Manuals",
+        "Applicant Manuals",
+        "User Manuals",
+        "Checklists",
+        "Undertakings",
+        "Declarations",
+        "Templates",
+        "Certificates",
+        "Technical Files",
+        "Forms"
+      ],
+      "knowledge_areas": [
+        "document_name",
+        "document_type",
+        "applicable_service",
+        "applicable_product",
+        "version",
+        "date",
+        "download_url",
+        "instructions",
+        "required_fields"
+      ]
+    },
+
+    "portals_and_digital_services": {
+      "name": "BIS Digital Services",
+      "description": "BIS online portals, systems and digital services.",
+      "categories": [
+        "Manakonline",
+        "BIS Standards Portal",
+        "LIMS",
+        "BIS CARE",
+        "Hallmarking Systems",
+        "Online Application",
+        "Online Payment",
+        "Online Verification",
+        "Online Complaint"
+      ],
+      "knowledge_areas": [
+        "portal_name",
+        "url",
+        "purpose",
+        "user_type",
+        "registration",
+        "login",
+        "services",
+        "application",
+        "payment",
+        "verification",
+        "support"
+      ]
+    },
+
+    "organizations_and_stakeholders": {
+      "name": "Stakeholders and Organizations",
+      "description": "Organizations and stakeholder groups interacting with BIS.",
+      "categories": [
+        "Manufacturers",
+        "Importers",
+        "Exporters",
+        "Foreign Manufacturers",
+        "Jewellers",
+        "Hallmarking Centres",
+        "Laboratories",
+        "Consumers",
+        "Government Departments",
+        "Ministries",
+        "Regulators",
+        "Technical Committees",
+        "Standards Developing Organizations",
+        "Industry Associations",
+        "Authorized Indian Representatives"
+      ],
+      "knowledge_areas": [
+        "organization",
+        "stakeholder_type",
+        "eligibility",
+        "responsibilities",
+        "requirements",
+        "services",
+        "relationship_with_BIS"
+      ]
+    },
+
+    "international_activities": {
+      "name": "International Standards and Cooperation",
+      "description": "BIS participation in international standardization and international cooperation.",
+      "categories": [
+        "ISO",
+        "IEC",
+        "International Standards Adoption",
+        "International Committees",
+        "International Cooperation",
+        "Foreign Manufacturers",
+        "International Training"
+      ],
+      "knowledge_areas": [
+        "organization",
+        "committee",
+        "standard",
+        "participation",
+        "adoption",
+        "agreement",
+        "programme"
+      ]
+    },
+
+    "faq_and_user_queries": {
+      "name": "Frequently Asked Questions and User Query Knowledge",
+      "description": "Natural-language questions users may ask the BIS assistant.",
+      "categories": [
+        "General BIS Questions",
+        "Product Questions",
+        "Certification Questions",
+        "Standard Questions",
+        "QCO Questions",
+        "CRS Questions",
+        "Hallmarking Questions",
+        "FMCS Questions",
+        "Laboratory Questions",
+        "Fee Questions",
+        "Application Questions",
+        "Renewal Questions",
+        "Complaint Questions",
+        "Consumer Questions"
+      ],
+      "knowledge_areas": [
+        "question",
+        "intent",
+        "answer",
+        "entities",
+        "keywords",
+        "related_entities",
+        "source"
+      ]
+    },
+
+    "glossary_and_terminology": {
+      "name": "BIS Glossary",
+      "description": "Definitions and explanations of BIS-specific terminology, abbreviations and technical terms.",
+      "categories": [
+        "BIS Abbreviations",
+        "Certification Terms",
+        "Standards Terms",
+        "Laboratory Terms",
+        "Hallmarking Terms",
+        "Regulatory Terms",
+        "Technical Terms",
+        "Process Terms"
+      ],
+      "knowledge_areas": [
+        "term",
+        "abbreviation",
+        "definition",
+        "full_form",
+        "context",
+        "related_terms"
+      ]
+    }
+  },
+
+  "cross_cutting_knowledge": [
+    "eligibility",
+    "applicability",
+    "mandatory_status",
+    "documents",
+    "requirements",
+    "technical_requirements",
+    "application",
+    "procedure",
+    "testing",
+    "laboratory",
+    "inspection",
+    "assessment",
+    "certification",
+    "registration",
+    "licence",
+    "fees",
+    "timeline",
+    "validity",
+    "renewal",
+    "surveillance",
+    "non_conformity",
+    "suspension",
+    "cancellation",
+    "appeal",
+    "complaint",
+    "contact",
+    "location",
+    "source",
+    "effective_date",
+    "last_verified"
+  ],
+
+  "coverage_requirements": {
+    "minimum_source_priority": [
+      "BIS Official Website",
+      "BIS Official Portals",
+      "Government of India",
+      "Official Gazette",
+      "Official Ministry Notifications"
+    ],
+    "secondary_sources_allowed": false,
+    "fabricated_information_allowed": false,
+    "unverified_information_allowed": false,
+    "source_required_for_every_record": true,
+    "last_verified_required": true,
+    "effective_date_required_when_applicable": true
+  }
+}

@@ -1,0 +1,1897 @@
+{
+  "source": "Bureau of Indian Standards",
+  "endpoint": "https://standardsadmin.bis.gov.in/master-service/getNewStandardsList",
+  "total_departments": 18,
+  "departments": [
+    {
+      "departmentId": "0",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 21357,
+            "standardNumber": "IS/ISO 10823:2004",
+            "publishedOn": "2011-08-31",
+            "standardName": "Guidelines for the selection of roller chain drives",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21390,
+            "standardNumber": "SI B2410:2011",
+            "publishedOn": null,
+            "standardName": "Standards India Vol. 24 No. 10 January 2011 Energy Efficient Star Labelling",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21404,
+            "standardNumber": "SI B2410:2011",
+            "publishedOn": null,
+            "standardName": "Standards India Vol. 24 No. 10 January 2010 rajiv gandhi quality awards",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21389,
+            "standardNumber": "SI B2411:2011",
+            "publishedOn": null,
+            "standardName": "Standards India Vol. 24 No. 11 February 2011 The Growing Role of Standards in International Trade",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21395,
+            "standardNumber": "SI B2412:2011",
+            "publishedOn": null,
+            "standardName": "Standards India Vol.24 No.12 March 2011An Overview of Set Top Box Technology and Standards",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21384,
+            "standardNumber": "SI B241:2010",
+            "publishedOn": null,
+            "standardName": "Standards India Volume 24 No 01April 2010 Hazarous Area - Types of Protection for Electrical Equipment and their Selection",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21396,
+            "standardNumber": "SI B242:2010",
+            "publishedOn": null,
+            "standardName": "Standards India Vol 24 No.2 May 2010 Importance of Fire Retardant Textiles-Role of Standards",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21393,
+            "standardNumber": "SI B243:2010",
+            "publishedOn": null,
+            "standardName": "Standards India Vol:24 No. 3 June 2010 Standardization for Sustainable Environment Management of Water Resources Projects",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21391,
+            "standardNumber": "SI B244:2010",
+            "publishedOn": null,
+            "standardName": "Standards India Vol.: 24 No. 4 July 2010 The need for Standardization of Highway Traffic Management Systems in India",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          },
+          {
+            "standardId": 21386,
+            "standardNumber": "SI B245:2010",
+            "publishedOn": null,
+            "standardName": "Standards India Vol.: 24 No.5 August 2010 Effect of Face Veneer Thickness on Strength Properties of Plywood",
+            "typeOfStandardName": "-",
+            "equivalenceTypeName": "-",
+            "is_documents": null
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 23,
+          "last_page": 3
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "107",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67073,
+            "standardNumber": "IS 19863 (Part 1):2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Financial services -Financial information eXchange session layer -Part 1: FIX tagvalue encoding",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/548_1783933822.pdf"
+          },
+          {
+            "standardId": 67074,
+            "standardNumber": "IS 19863 (Part 2):2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Financial services -Financial information eXchange session layer -Part 2: FIX session layer",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/426_1783933884.pdf"
+          },
+          {
+            "standardId": 67075,
+            "standardNumber": "IS 19863 (Part 3):2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Financial services -Financial information eXchange session layer -Part 3: FIX session layer test cases",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/3_1783933940.pdf"
+          },
+          {
+            "standardId": 67004,
+            "standardNumber": "IS 29997:2025",
+            "publishedOn": "2026-06-09",
+            "standardName": "Internships  Quality Guidelines for Host Organizations",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/295_1782108173.pdf"
+          },
+          {
+            "standardId": 66964,
+            "standardNumber": "IS 19826:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Service excellence — Maturity model",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/708_1781070340.pdf"
+          },
+          {
+            "standardId": 66977,
+            "standardNumber": "IS 19827:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Service excellence — Implementation approach for ISO 23592",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/276_1781072679.pdf"
+          },
+          {
+            "standardId": 66967,
+            "standardNumber": "IS 19828:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Service excellence — Measuring service excellence performance",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/170_1781070440.pdf"
+          },
+          {
+            "standardId": 66965,
+            "standardNumber": "IS 19829:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Recreational diving services — Requirements for rebreather instructor training",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/497_1781070550.pdf"
+          },
+          {
+            "standardId": 66966,
+            "standardNumber": "IS 19830:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Tourism and Related Services—Guidance on a Contingency Plan for Infection Prevention and Control (IPC) in the Exhibition Industry",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/845_1781069681.pdf"
+          },
+          {
+            "standardId": 66968,
+            "standardNumber": "IS 19831:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Recreational diving services — Requirements for artificial open water sites",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/349_1781070640.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 170,
+          "last_page": 17
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "109",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67153,
+            "standardNumber": "IS 19897:2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Homoeopathic Mother Tinctures (Hydro-Alcoholic Extracts) — Test Methods",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/116_1786681832.pdf"
+          },
+          {
+            "standardId": 67155,
+            "standardNumber": "IS 19898:2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Echinacea Angustifolia Hydro-Alcoholic Extract for Use in Homoeopathy — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/450_1786681893.pdf"
+          },
+          {
+            "standardId": 67154,
+            "standardNumber": "IS 19900:2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Echinacea Angustifolia DC. Whole Plant for Use in Traditional Medicine — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/921_1786681949.pdf"
+          },
+          {
+            "standardId": 67152,
+            "standardNumber": "IS 19901:2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Safe Handling of Biotherapeutic Products Used in Homoeopathy — Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/951_1786682019.pdf"
+          },
+          {
+            "standardId": 67127,
+            "standardNumber": "IS 19792:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Pharmacovigilance Centre for Ayurveda Siddha Sowa-Rigpa Unani and Homoeopathy ( ASU & H) systems  Service Requirements",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/927_1785733747.pdf"
+          },
+          {
+            "standardId": 67088,
+            "standardNumber": "IS 17874 (Part 2):2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Glossary of Yoga Terminology - Part 2 Commonly used Terms from Gheranda Samhita",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/939_1784868871.pdf"
+          },
+          {
+            "standardId": 67089,
+            "standardNumber": "IS 17874 (Part 3):2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Glossary of Yoga Terminology - Part 3 Commonly Used Terms from Hatha Yoga Pradipika",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/596_1784869024.pdf"
+          },
+          {
+            "standardId": 67026,
+            "standardNumber": "IS 19856:2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Preparation of Cūraṇam tablet (Medicinal Powder tablet) - Code of Practice",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/962_1783580214.pdf"
+          },
+          {
+            "standardId": 67025,
+            "standardNumber": "IS 19857:2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Preparation of Kuṭinīr Tablet (Decoction tablet) – Code of Practice",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/19_1783580293.pdf"
+          },
+          {
+            "standardId": 66992,
+            "standardNumber": "IS 19851:2026",
+            "publishedOn": "2026-06-02",
+            "standardName": "Hydnocarpus pentandra (Buch.-Ham.) Oken seed for use in Traditional medicine – Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/412_1781603023.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 245,
+          "last_page": 25
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "110",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67161,
+            "standardNumber": "IS 19879:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "PREPARATION OF AIR QUALITY MANAGEMENT PLAN — CODE OF PRACTICE",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/598_1781779812.pdf"
+          },
+          {
+            "standardId": 67162,
+            "standardNumber": "IS 19880:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "CONTROL OF AIR POLLUTION FROM PLASTIC WASTE PYROLYSIS — CODE OF PRACTICE",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/07/59_1784025132.pdf"
+          },
+          {
+            "standardId": 67160,
+            "standardNumber": "IS 19881:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "ASSIMILATIVE AND CARRYING CAPACITY ASSESSMENT OF AMBIENT AIR POLLUTION — METHODOLOGY",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/342_1782726851.pdf"
+          },
+          {
+            "standardId": 67163,
+            "standardNumber": "IS 19882 (Part 1):2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Soil quality — Sampling — Part 1: Preliminary investigations",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/07/316_1783919849.pdf"
+          },
+          {
+            "standardId": 67164,
+            "standardNumber": "IS 19882 (Part 2):2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Soil quality  — Sampling —   Part 2: Investigation of potentially contaminated sites",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/449_1782291900.pdf"
+          },
+          {
+            "standardId": 67165,
+            "standardNumber": "IS 19882 (Part 3):2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Soil quality — Sampling — Part 3: Guidance on the procedure for investigation of natural, near-natural and cultivated sites",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/07/855_1783662244.pdf"
+          },
+          {
+            "standardId": 67013,
+            "standardNumber": "IS 19757:2026",
+            "publishedOn": "2026-06-09",
+            "standardName": "Alternative Drinking Water Service Provision During a Crisis — Guidelines",
+            "typeOfStandardName": "Service Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/04/25_1776942473.pdf"
+          },
+          {
+            "standardId": 66953,
+            "standardNumber": "IS 20201:2026",
+            "publishedOn": "2026-05-29",
+            "standardName": "Community Seed Bank Management System - Requirements",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/05/416_1779688947.pdf"
+          },
+          {
+            "standardId": 66914,
+            "standardNumber": "IS 19756:2026",
+            "publishedOn": "2026-05-14",
+            "standardName": "Benchmarking of Environmental Monitoring Services — Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/04/103_1777446175.pdf"
+          },
+          {
+            "standardId": 66916,
+            "standardNumber": "IS 19766 (Part 2):2026",
+            "publishedOn": "2026-05-14",
+            "standardName": "Sustainability in buildings and civil engineering works — Sustainability indicators —   Part 2: Framework for the development of indicators for civil engineering works",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/04/910_1775448958.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 107,
+          "last_page": 11
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "21",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67069,
+            "standardNumber": "IS/ISO 56001:2024",
+            "publishedOn": "2026-07-03",
+            "standardName": "Innovation Management System — Requirements",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/570_1783933995.pdf"
+          },
+          {
+            "standardId": 66884,
+            "standardNumber": "IS 19793:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Societal security — Guidelines for establishing partnering arrangements",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/9_1776834517.pdf"
+          },
+          {
+            "standardId": 66885,
+            "standardNumber": "IS 19794:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Authenticity, integrity and trust for products and documents — Guidelines to establish a framework for trust and interoperability",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/59_1776834596.pdf"
+          },
+          {
+            "standardId": 66878,
+            "standardNumber": "IS 19795:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Authenticity, integrity and trust for products and documents — Framework for establishing trustworthy supply and value chains",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/657_1776834673.pdf"
+          },
+          {
+            "standardId": 66883,
+            "standardNumber": "IS 19796:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Crisis management — Concepts, principles and framework",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/349_1776834744.pdf"
+          },
+          {
+            "standardId": 66702,
+            "standardNumber": "IS 19797:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Authenticity, integrity and trust for products and documents — Guidelines for securing physical documents",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/96_1776231169.pdf"
+          },
+          {
+            "standardId": 66882,
+            "standardNumber": "IS 19798:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Community resilience — Guidelines for infrastructure resilience",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/43_1776834821.pdf"
+          },
+          {
+            "standardId": 66881,
+            "standardNumber": "IS 19799:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Community resilience — Principles, framework and guidelines on urban resilience",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/841_1776834916.pdf"
+          },
+          {
+            "standardId": 66880,
+            "standardNumber": "IS 19800:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Authenticity, integrity and trust for products and documents — Guidelines for establishing interoperability among object identification systems to deter counterfeiting and illicit trade",
+            "typeOfStandardName": "Process Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/584_1776835000.pdf"
+          },
+          {
+            "standardId": 66879,
+            "standardNumber": "IS 19802:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Security and resilience — Authenticity, integrity and trust for products and documents — Specification and usage of visible digital seal (VDS) data format for authentication, verification and acquisition of data carried by a document or object",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/672_1776835164.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 387,
+          "last_page": 39
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "61",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67151,
+            "standardNumber": "IS 19887:2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Monocalcium phosphate, animal feed grade — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/124_1786681516.pdf"
+          },
+          {
+            "standardId": 67093,
+            "standardNumber": "IS 17113 (Part 7):2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Microbiology of the food chain — Method validation — Part 7 : Protocol for the validation of identification methods of microorganisms",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/338_1784868775.pdf"
+          },
+          {
+            "standardId": 67090,
+            "standardNumber": "IS 19510:2025",
+            "publishedOn": "2026-07-09",
+            "standardName": "Ametryn, technical - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/277_1784869105.pdf"
+          },
+          {
+            "standardId": 67091,
+            "standardNumber": "IS 19823:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "POTENTIOMETRIC DETERMINATION OF CHLORIDE IN MILK, MILK PRODUCTS AND MILK BASED NUTRITION FORMULATIONS (INFANT & ADULT) - METHOD OF TEST",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/210_1784869170.pdf"
+          },
+          {
+            "standardId": 67095,
+            "standardNumber": "IS 19843:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Microbiology of the food chain — Detection and quantification of histamine in fish and fishery products — HPLC method",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/735_1784869235.pdf"
+          },
+          {
+            "standardId": 67094,
+            "standardNumber": "IS 19844:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Microbiology of the food chain — Polymerase chain reaction (PCR) for the detection of microorganisms — Thermal performance testing of thermal cyclers",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/488_1784869299.pdf"
+          },
+          {
+            "standardId": 67100,
+            "standardNumber": "IS 19845:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Water quality — Sampling for microbiological analysis",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/920_1784869401.pdf"
+          },
+          {
+            "standardId": 67092,
+            "standardNumber": "IS 19846:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Heat-processed foods in hermetically sealed containers — Determination of pH",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/572_1784869511.pdf"
+          },
+          {
+            "standardId": 67098,
+            "standardNumber": "IS 19847:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Water quality — Polymerase chain reaction (PCR) for the detection and quantification of microorganisms and viruses — General requirements, quality assurance and validation",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/953_1784869608.pdf"
+          },
+          {
+            "standardId": 67097,
+            "standardNumber": "IS 19848:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Water quality — Requirements for the comparison of the relative recovery of microorganisms by two quantitative methods",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/765_1784869742.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 1070,
+          "last_page": 107
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "62",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67126,
+            "standardNumber": "IS 19535:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Board  - Determination of puncture resistance using a pendulum device",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/79_1785733467.pdf"
+          },
+          {
+            "standardId": 67125,
+            "standardNumber": "IS 19655 (Part 6):2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Handmade Paper for Certificates  Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/990_1785733651.pdf"
+          },
+          {
+            "standardId": 67053,
+            "standardNumber": "IS 19869:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas mixtures — Gravimetric preparation — Mastering correlations in composition",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/597_1783659719.pdf"
+          },
+          {
+            "standardId": 67056,
+            "standardNumber": "IS 19870:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — Purity analysis and the treatment of purity data",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/506_1783660031.pdf"
+          },
+          {
+            "standardId": 67057,
+            "standardNumber": "IS 19871:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — General quality aspects and metrological traceability of calibration gas mixtures",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/820_1783660192.pdf"
+          },
+          {
+            "standardId": 67051,
+            "standardNumber": "IS 19872:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — Preparation of calibration gas mixtures — Part 2 Gravimetric method for Class II mixtures",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/780_1783659292.pdf"
+          },
+          {
+            "standardId": 67054,
+            "standardNumber": "IS 19873:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — Analytical methods for hydrogen fuel — Proton exchange membrane (PEM) fuel cell applications for road vehicles",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/516_1783660276.pdf"
+          },
+          {
+            "standardId": 67055,
+            "standardNumber": "IS 19874:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — Sampling guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/526_1783660348.pdf"
+          },
+          {
+            "standardId": 67052,
+            "standardNumber": "IS 19875:2026",
+            "publishedOn": "2026-06-30",
+            "standardName": "Gas analysis — Comparison methods for the determination of the composition of gas mixtures based on one- and two-point calibration",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/216_1783660448.pdf"
+          },
+          {
+            "standardId": 66910,
+            "standardNumber": "IS 19749:2026",
+            "publishedOn": "2026-05-15",
+            "standardName": "Probabilistic Risk Assessment of Nuclear Power Plants - Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/05/899_1779167111.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 827,
+          "last_page": 83
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "63",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 66695,
+            "standardNumber": "IS 19452:2026",
+            "publishedOn": "2026-03-27",
+            "standardName": "Design Installation Testing and Maintenance of Condensed Aerosol Fire Extinguishing System - Code of Practice",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/382_1776227701.pdf"
+          },
+          {
+            "standardId": 66585,
+            "standardNumber": "IS 19752 (Part 1):2026",
+            "publishedOn": "2026-03-23",
+            "standardName": "Floor and Wall tiling — Guidelines : Part 1 Characteristics and Requirements of tile and Stone Laying Materials and Design Data",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/739_1775041800.pdf"
+          },
+          {
+            "standardId": 66586,
+            "standardNumber": "IS 19752 (Part 2):2026",
+            "publishedOn": "2026-03-23",
+            "standardName": "Floor and Wall tiling — Guidelines : Part 2 Installation Inspection and Maintenance of Tile and Stone Systems",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/469_1775041567.pdf"
+          },
+          {
+            "standardId": 65575,
+            "standardNumber": "IS 14223 (Part 2):2025",
+            "publishedOn": "2025-11-20",
+            "standardName": "Polished Building Stones –– Specification  Part 2 Marble and Similar Stones",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2025/11/182_1763632347.pdf"
+          },
+          {
+            "standardId": 65574,
+            "standardNumber": "IS 1893 (Part 5):2025",
+            "publishedOn": "2025-11-20",
+            "standardName": "Design Earthquake Hazard  and  Criteria for Earthquake-Resistant Design of Structures  Part 5 Buildings ( Seventh Revision )",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2025/11/130_1763627093.pdf"
+          },
+          {
+            "standardId": 33879,
+            "standardNumber": "IS 19267:2025",
+            "publishedOn": "2025-09-01",
+            "standardName": "Oriented Strand Boards ï¿½ Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S03/S03V01/19267.pdf"
+          },
+          {
+            "standardId": 33828,
+            "standardNumber": "IS 14458 (Part 9):2025",
+            "publishedOn": "2025-08-19",
+            "standardName": "Retaining Wall for Hill Areas  Guidelines: Part 9 Construction of Reinforced Cement Concrete (RCC)  Crib Wall",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S03/S03V01/14458_9.pdf"
+          },
+          {
+            "standardId": 33830,
+            "standardNumber": "IS 19339:2025",
+            "publishedOn": "2025-08-19",
+            "standardName": "Numerical Modelling in Rock Engineering - Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S03/S03V01/19339.pdf"
+          },
+          {
+            "standardId": 33572,
+            "standardNumber": "IS 19315:2025",
+            "publishedOn": "2025-07-07",
+            "standardName": "Ball Valves for Water Works Purposes - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S03/S03V01/19315.pdf"
+          },
+          {
+            "standardId": 33408,
+            "standardNumber": "IS 19068:2025",
+            "publishedOn": "2025-05-29",
+            "standardName": "Continuous hot-dip galvanized steel bars for concrete reinforcement - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S03/S03V01/19068.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 879,
+          "last_page": 88
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "64",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67145,
+            "standardNumber": "IS 13450 (Part 2/Sec 75):2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Medical electrical equipment Part 2 Particular requirements for the basic safety and essential performance  Section 75 Photodynamic therapy and photodynamic diagnosis equipment",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Modified/Technically Equivalent",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/212_1786618192.pdf"
+          },
+          {
+            "standardId": 67146,
+            "standardNumber": "IS 13450 (Part 2/Sec 83):2026",
+            "publishedOn": "2026-08-03",
+            "standardName": "Medical electrical equipment Part 2 Particular requirements for the basic safety and essential performance Section 83 Home light therapy equipment",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Modified/Technically Equivalent",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/69_1786618238.pdf"
+          },
+          {
+            "standardId": 67072,
+            "standardNumber": "IS 19811:2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Surgical Instruments - Disposable Scalpel",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/666_1783933649.pdf"
+          },
+          {
+            "standardId": 67070,
+            "standardNumber": "IS 19814:2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Surgical Instruments - Scalpel Handle",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/366_1783933707.pdf"
+          },
+          {
+            "standardId": 67071,
+            "standardNumber": "IS 19815:2026",
+            "publishedOn": "2026-07-03",
+            "standardName": "Surgical Instruments - Scalpel Blade",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/306_1783933760.pdf"
+          },
+          {
+            "standardId": 66974,
+            "standardNumber": "IS 19632:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Fall Detectors - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/831_1781073308.pdf"
+          },
+          {
+            "standardId": 66906,
+            "standardNumber": "IS 19791:2026",
+            "publishedOn": "2026-04-21",
+            "standardName": "ENT Surgery Instruments ––  Microdebrider —  Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/05/265_1777974274.pdf"
+          },
+          {
+            "standardId": 66780,
+            "standardNumber": "IS 13970 (Part 4):2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Prosthetics and orthotics  Vocabulary  Part 4 Terms relating to limb amputation",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/879_1776401956.pdf"
+          },
+          {
+            "standardId": 66759,
+            "standardNumber": "IS 19512 (Part 2):2025",
+            "publishedOn": "2026-03-30",
+            "standardName": "Implants for Surgery  Pre-Clinical Mechanical Assessment of Spinal Implants and Particular Requirements Part 2 Spinal Intervertebral Body Fusion Devices",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Modified/Technically Equivalent",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/664_1776333322.pdf"
+          },
+          {
+            "standardId": 66778,
+            "standardNumber": "IS 19631:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Portable Ramps - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/417_1776402240.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 1246,
+          "last_page": 125
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "65",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67128,
+            "standardNumber": "IS 302 (Part 2/Sec 16):2026",
+            "publishedOn": "2026-07-24",
+            "standardName": "Household and Similar Electrical  Appliances - Safety  Part 2 Particular Requirements Section 16 Food Waste Disposers",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/905_1785734905.pdf"
+          },
+          {
+            "standardId": 67129,
+            "standardNumber": "IS 302 (Part 2/Sec 36):2026",
+            "publishedOn": "2026-07-24",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 36 Commercial Electric Cooking Ranges, Ovens, Hobs and Hob Elements",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/194_1785735063.pdf"
+          },
+          {
+            "standardId": 67130,
+            "standardNumber": "IS 302 (Part 2/Sec 49):2026",
+            "publishedOn": "2026-07-24",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 49 Commercial Electric Appliances for Keeping Food and Crockery Warm",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/845_1785735130.pdf"
+          },
+          {
+            "standardId": 67131,
+            "standardNumber": "IS 302 (Part 2/Sec 54):2026",
+            "publishedOn": "2026-07-24",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 54 Surface-Cleaning Appliances for Household Use Employing Liquids or Steam",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/08/331_1785735224.pdf"
+          },
+          {
+            "standardId": 67107,
+            "standardNumber": "IS 19762:2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Interconnection and Interoperability of Inverter-Based Resources  (IBRs) Interconnecting with Associated Transmission Electric Power Systems",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Modified/Technically Equivalent",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/739_1784872271.pdf"
+          },
+          {
+            "standardId": 67102,
+            "standardNumber": "IS 302 (Part 2/Sec 10):2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 10 Floor Treatment Machines and Wet Scrubbing Machines",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/447_1784871651.pdf"
+          },
+          {
+            "standardId": 67101,
+            "standardNumber": "IS 302 (Part 2/Sec 17):2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 17 Blankets, Pads, Clothing and Similar Flexible Heating Appliances",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/970_1784871744.pdf"
+          },
+          {
+            "standardId": 67103,
+            "standardNumber": "IS 302 (Part 2/Sec 28):2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 28 Sewing Machines",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/714_1784871841.pdf"
+          },
+          {
+            "standardId": 67104,
+            "standardNumber": "IS 302 (Part 2/Sec 37):2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 37 Commercial Electric Doughnut Fryers and Deep Fat Fryers",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/218_1784871915.pdf"
+          },
+          {
+            "standardId": 67105,
+            "standardNumber": "IS 302 (Part 2/Sec 48):2026",
+            "publishedOn": "2026-07-06",
+            "standardName": "Household and Similar Electrical  Appliances — Safety  Part 2 Particular Requirements Section 48 Commercial Electric Grillers and Toasters",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/443_1784871982.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 1172,
+          "last_page": 118
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "66",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67027,
+            "standardNumber": "IS 19834:2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Enterprise Architecture (EA) Security – Code of Practice",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/877_1783589100.pdf"
+          },
+          {
+            "standardId": 67028,
+            "standardNumber": "IS 19835:2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Zero Trust Architecture (ZTA) - Implementation Framework",
+            "typeOfStandardName": "System Standard",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/358_1783589188.pdf"
+          },
+          {
+            "standardId": 67030,
+            "standardNumber": "IS/ISO/IEC 27031:2025",
+            "publishedOn": "2026-06-23",
+            "standardName": "Cybersecurity — Information and communication technology readiness for business continuity",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/776_1783589558.pdf"
+          },
+          {
+            "standardId": 67029,
+            "standardNumber": "IS/ISO/IEC 8663:2025",
+            "publishedOn": "2026-06-23",
+            "standardName": "Information Technology - Brain-Computer Interfaces  - Vocabulary",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/974_1783588789.pdf"
+          },
+          {
+            "standardId": 66973,
+            "standardNumber": "IS 19711:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "DataContent Standard for Geospatial Information - Part 3 Geology",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/96_1781072582.pdf"
+          },
+          {
+            "standardId": 66905,
+            "standardNumber": "IS/IEC 60068 (Part 2/Sec 11):2021",
+            "publishedOn": "2026-04-21",
+            "standardName": "Environmental Testing    Part 2: Tests Section 11: Test Ka - Salt mist",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/05/829_1777974339.pdf"
+          },
+          {
+            "standardId": 66756,
+            "standardNumber": "IEC 61000 (Part 5/Sec 2):2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Electromagnetic Compatibility EMC   Part 5: Installation and Mitigation Guidelines   Section 2: Earthing and Cabling",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/197_1776332912.pdf"
+          },
+          {
+            "standardId": 66783,
+            "standardNumber": "IS/ISO/IEC 42005:2025",
+            "publishedOn": "2026-03-30",
+            "standardName": "Information technology  Artificial intelligence AI  AI system impact assessment",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/192_1776402600.pdf"
+          },
+          {
+            "standardId": 66784,
+            "standardNumber": "IS/ISO/IEC 42006:2025",
+            "publishedOn": "2026-03-30",
+            "standardName": "Information technology   Artificial intelligence AI  Requirements for bodies providing audit and certification of artificial intelligence management systems",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/239_1776402639.pdf"
+          },
+          {
+            "standardId": 66782,
+            "standardNumber": "IS/ISO/IEC 5259 (Part 5):2025",
+            "publishedOn": "2026-03-30",
+            "standardName": "Artificial Intelligence — Data Quality for Analytics and Machine Learning (ML) Part 5 Data Quality Governance Framework",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/100_1776401484.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 1184,
+          "last_page": 119
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "67",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 66402,
+            "standardNumber": "IS/ISO 6621 (Part 5):2020",
+            "publishedOn": "2026-03-10",
+            "standardName": "INTERNAL COMBUSTION ENGINES  PISTON RINGS  PART 5: QUALITY REQUIREMENTS",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/984_1773903290.pdf"
+          },
+          {
+            "standardId": 66273,
+            "standardNumber": "IS 17128 (Part 4):2026",
+            "publishedOn": "2026-02-27",
+            "standardName": "Automotive Vehicles ― Vehicle Dynamics Test Methods Part 4 Ride Comfort Measurements",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/387_1773310907.pdf"
+          },
+          {
+            "standardId": 66274,
+            "standardNumber": "IS 17128 (Part 5):2026",
+            "publishedOn": "2026-02-27",
+            "standardName": "Automotive Vehicles — Vehicle Dynamics  Test Methods  Part 5 Subjective Evaluation Vehicle Ride,  Handling, Steering",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/317_1773310923.pdf"
+          },
+          {
+            "standardId": 65939,
+            "standardNumber": "IS 19538:2026",
+            "publishedOn": "2026-02-10",
+            "standardName": "Internal Combustion Engines - Piston Rings - Oil Control Rings",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/02/633_1771586485.pdf"
+          },
+          {
+            "standardId": 65940,
+            "standardNumber": "ISO/SAE 21434:2021",
+            "publishedOn": "2026-02-10",
+            "standardName": "ROAD VEHICLES  CYBER SECURITY ENGINEERING",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under single numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/02/131_1771586608.pdf"
+          },
+          {
+            "standardId": 65914,
+            "standardNumber": "IS 19520 (Part 3):2026",
+            "publishedOn": "2026-02-04",
+            "standardName": "INTERNAL COMBUSTION ENGINES - PISTON RINGS  - PART 3: COIL-SPRING-LOADED OIL CONTROL RINGS MADE OF STEEL",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/02/850_1771579235.pdf"
+          },
+          {
+            "standardId": 65915,
+            "standardNumber": "IS 19521:2026",
+            "publishedOn": "2026-02-04",
+            "standardName": "INTERNAL COMBUSTION ENGINES — PISTON RINGS —  EXPANDER RAIL OIL-CONTROL RINGS",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/02/271_1771579263.pdf"
+          },
+          {
+            "standardId": 65848,
+            "standardNumber": "IS 8007 (Part 3):2026",
+            "publishedOn": "2026-01-16",
+            "standardName": "Road vehicles Mechanical couplings between tractors and semi-trailers Part 3: Requirements for semi-trailer contact area to fifth wheel",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/02/586_1770202074.pdf"
+          },
+          {
+            "standardId": 65745,
+            "standardNumber": "IS 19413:2025",
+            "publishedOn": "2025-12-18",
+            "standardName": "Intelligent Traffic Management System Components — General Specifications for Smart Traffic Signalling Systems",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2025/12/351_1767092988.pdf"
+          },
+          {
+            "standardId": 33800,
+            "standardNumber": "IS 19065 (Part 6):2025",
+            "publishedOn": "2025-08-13",
+            "standardName": "SPACE SYSTEMS - SURFACE CLEANLINESS OF FLUID SYSTEMS  - PART 6 : PRECISION-CLEANING PROCESSES",
+            "typeOfStandardName": "Process Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/oldStandards/S13/S13V01/19065_6.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 762,
+          "last_page": 77
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "68",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67014,
+            "standardNumber": "IS 19607:2026",
+            "publishedOn": "2026-06-09",
+            "standardName": "Gasket and Packing — Wire Reinforced Asbestos Fibre-Based Jointing Sheet — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/04/899_1776836409.pdf"
+          },
+          {
+            "standardId": 66578,
+            "standardNumber": "IS 19687:2026",
+            "publishedOn": "2026-03-25",
+            "standardName": "Safety Guidelines and General Precautions for Abandonment  of Tube Wells and Bore Wells",
+            "typeOfStandardName": "Safety Standard",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/478_1775039082.pdf"
+          },
+          {
+            "standardId": 66554,
+            "standardNumber": "IS 19743:2026",
+            "publishedOn": "2026-03-20",
+            "standardName": "BUILDING CONSTRUCTION MACHINERY AND EQUIPMENT  PILE DRIVING AND EXTRACTING EQUIPMENT  TERMINOLOGY AND COMMERCIAL SPECIFICATIONS   Adoption of ISO 11886",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/937_1775020088.pdf"
+          },
+          {
+            "standardId": 66555,
+            "standardNumber": "IS 19765:2026",
+            "publishedOn": "2026-03-20",
+            "standardName": "Road Construction and Maintenance Equipment — Pavers-finishers — Commercial Specifications ( First Revision )",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/407_1775020407.pdf"
+          },
+          {
+            "standardId": 66489,
+            "standardNumber": "IS 19600:2026",
+            "publishedOn": "2026-03-17",
+            "standardName": "Gasket and Packing  Flexible Graphite Material  Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/875_1774593058.pdf"
+          },
+          {
+            "standardId": 66491,
+            "standardNumber": "IS 19745:2026",
+            "publishedOn": "2026-03-17",
+            "standardName": "STEEL WIRE ROPES — DETERMINATION OF THE TRANSVERS RIGIDITY OF STEEL WIRE ROPES UNDER NO AXIAL LOAD CONDITION",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/867_1774593126.pdf"
+          },
+          {
+            "standardId": 66492,
+            "standardNumber": "IS 19746:2026",
+            "publishedOn": "2026-03-17",
+            "standardName": "STEEL WIRE ROPES — DETERMINATION OF ROTATIONAL PROPERTIES",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/193_1774593215.pdf"
+          },
+          {
+            "standardId": 66490,
+            "standardNumber": "IS 19747:2026",
+            "publishedOn": "2026-03-17",
+            "standardName": "Steel wire ropes — Determination of the actual modulus of elasticity",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/48_1774593301.pdf"
+          },
+          {
+            "standardId": 66392,
+            "standardNumber": "IS 19555:2026",
+            "publishedOn": "2026-03-05",
+            "standardName": "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources using Sound Pressure — Engineering Methods for an Essentially Free Field over a Reflecting Plane",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/343_1773899346.pdf"
+          },
+          {
+            "standardId": 66214,
+            "standardNumber": "IS 19544 (Part 2):2026",
+            "publishedOn": "2026-02-27",
+            "standardName": "Acoustics — Determination of Sound Power Levels of Noise Sources Using Sound Pressure — Engineering Methods for Small, Movable Sources in Reverberant Fields Part 2 Methods for Special Reverberation Test Rooms",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/549_1773137382.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 693,
+          "last_page": 70
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "69",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 66980,
+            "standardNumber": "IS 19877T:2026",
+            "publishedOn": "2026-06-11",
+            "standardName": "Assessment of Potential Biodegradability of Plastics Under Controlled Laboratory Conditions",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/254_1781158811.pdf"
+          },
+          {
+            "standardId": 66912,
+            "standardNumber": "IS 19850:2026",
+            "publishedOn": "2026-05-15",
+            "standardName": "E22, E25, E27 & E30 FUEL – ADMIXTURE OF ANHYDROUS ETHANOL AND GASOLINE — SPECIFICATION",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/05/9_1779167219.pdf"
+          },
+          {
+            "standardId": 66727,
+            "standardNumber": "IS 1448 (Part 208):2019",
+            "publishedOn": "2026-03-30",
+            "standardName": "PETROLEUM AND ITS PRODUCTS - TEST METHODS  PART XX  DETERMINATION OF DISTILLATION CHARACTERISTICS OF PETROLEUM PRODUCTS BY MICRO DISTILLATION METHOD",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/476_1776329515.pdf"
+          },
+          {
+            "standardId": 66728,
+            "standardNumber": "IS 1448 (Part 210):2019",
+            "publishedOn": "2026-03-30",
+            "standardName": "PETROLEUM AND ITS PRODUCTS - TEST METHODS  PART XX EVALUATION OF LUBRICITY OF AVIATION TURBINE FUELS  BY USING THE BALL-ON-CYLINDER LUBRICITY EVALUATOR BOCLE",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/753_1776329617.pdf"
+          },
+          {
+            "standardId": 66729,
+            "standardNumber": "IS 1448 (Part 211):2019",
+            "publishedOn": "2026-03-30",
+            "standardName": "PETROLEUM AND ITS PRODUCTS - TEST METHODS  PART STANDARD TEST METHOD FOR VAPOR PRESSURE OF PETROLEUM PRODUCTS MINI METHOD",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/869_1776329703.pdf"
+          },
+          {
+            "standardId": 66730,
+            "standardNumber": "IS 1448 (Part 212):2019",
+            "publishedOn": "2026-03-30",
+            "standardName": "PETROLEUM AND ITS PRODUCTS  - TEST METHODS PART XX DETERMINATION OF TRACE IMPURITIES IN MONOCYCLIC AROMATIC HYDROCARBONS WITH CARBON NUMBER SEPERATION BY GAS CHROMTOGRAPGHY METHOD",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/749_1776329884.pdf"
+          },
+          {
+            "standardId": 66744,
+            "standardNumber": "IS 19487:2025",
+            "publishedOn": "2026-03-30",
+            "standardName": "SAFE HANDLING OF BITUMEN AND BITUMEN PRODUCTS   CODE OF PRACTICE",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/736_1776329292.pdf"
+          },
+          {
+            "standardId": 66741,
+            "standardNumber": "IS 19681:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "FACE WASH - SPECIFICATION",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/600_1776329412.pdf"
+          },
+          {
+            "standardId": 66743,
+            "standardNumber": "IS 19682:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "SHOWER GEL BODY WASH  SPECIFICATION",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/54_1776329489.pdf"
+          },
+          {
+            "standardId": 66742,
+            "standardNumber": "IS 19683:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "FACE AND BODY SCRUB - SPECIFICATION",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/667_1776329572.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 603,
+          "last_page": 61
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "70",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67159,
+            "standardNumber": "IS 1608 (Part 5):2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Metallic materials — Tensile testing Part 5: Specification for testing miniaturised test pieces",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/364_1781516025.pdf"
+          },
+          {
+            "standardId": 67136,
+            "standardNumber": "IS 19878:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Metallic and Other Inorganic Coatings — Electropolishing as a Means of Smoothing and Passivating Stainless Steel",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/320_1782292007.pdf"
+          },
+          {
+            "standardId": 67080,
+            "standardNumber": "IS 19841:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Galvanizing Grade (GG) Zinc Alloy Ingots for Hot Dip Galvanizing of Steel — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/697_1781785075.pdf"
+          },
+          {
+            "standardId": 67015,
+            "standardNumber": "IS 19819:2026",
+            "publishedOn": "2026-06-09",
+            "standardName": "Chemical Analysis of Refractory Products by X-ray Fluorescence (XRF) — Fused Cast-bead Method",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/05/810_1779874770.pdf"
+          },
+          {
+            "standardId": 66951,
+            "standardNumber": "IS 19734:2026",
+            "publishedOn": "2026-05-14",
+            "standardName": "Aluminium and Aluminium Alloy Billets and Slabs — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/04/638_1775028008.pdf"
+          },
+          {
+            "standardId": 66857,
+            "standardNumber": "IS 19773:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "High chrome grinding media ball for cement mills - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/297_1776667537.pdf"
+          },
+          {
+            "standardId": 66697,
+            "standardNumber": "IS 228 (Part 25):2025",
+            "publishedOn": "2026-03-27",
+            "standardName": "Methods for chemical analysis of steels: Part 25 Determination of sulphur content — Infrared absorption method after combustion in an induction furnace",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/762_1776227215.pdf"
+          },
+          {
+            "standardId": 66556,
+            "standardNumber": "IS 19667:2026",
+            "publishedOn": "2026-03-20",
+            "standardName": "Nanotechnology — Nanoparticles in powder form — Characteristics and measurements",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/395_1775020020.pdf"
+          },
+          {
+            "standardId": 66553,
+            "standardNumber": "IS 19750:2026",
+            "publishedOn": "2026-03-20",
+            "standardName": "Welding  Measurement of preheating temperature interpass temperature and preheat maintenance temperature",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/992_1775020177.pdf"
+          },
+          {
+            "standardId": 66488,
+            "standardNumber": "IS 19559:2026",
+            "publishedOn": "2026-03-17",
+            "standardName": "Hot Rolled Alloy Steel Bars  Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/702_1774592886.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 690,
+          "last_page": 69
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "71",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67156,
+            "standardNumber": "IS 19763:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Textile floor coverings -  Aircraft Woven Carpet - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/22_1782812655.pdf"
+          },
+          {
+            "standardId": 67158,
+            "standardNumber": "IS 19783:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "Textiles — 100 Percent Nylon Woven Fabric — Specifications",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/07/427_1784192585.pdf"
+          },
+          {
+            "standardId": 67157,
+            "standardNumber": "IS 19822:2026",
+            "publishedOn": "2026-08-04",
+            "standardName": "FIBRE ROPES — ELECTROSTATIC SURFACE POTENTIAL MEASURING METHOD",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/583_1781073266.pdf"
+          },
+          {
+            "standardId": 67141,
+            "standardNumber": "IS 19884:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Geosynthetic Clay Liner — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/07/492_1783401988.pdf"
+          },
+          {
+            "standardId": 67137,
+            "standardNumber": "IS 19885:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Geosynthetics - Drainage Geo-composite - Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/07/545_1785135638.pdf"
+          },
+          {
+            "standardId": 67000,
+            "standardNumber": "IS 19726:2026",
+            "publishedOn": "2026-06-02",
+            "standardName": "Textiles — Jute Shopping Bag — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/840_1773646734.pdf"
+          },
+          {
+            "standardId": 66915,
+            "standardNumber": "IS 19782:2026",
+            "publishedOn": "2026-05-14",
+            "standardName": "Textiles —Knitted Pyjamas — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/05/335_1777877309.pdf"
+          },
+          {
+            "standardId": 66874,
+            "standardNumber": "IS 19704:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Jute Packaging Material — Determination of Mineral Oil Saturated Hydrocarbons (MOSH) and Mineral Oil Aromatic Hydrocarbons (MOAH) with Online-Coupled High-Performance Liquid Chromatography–Gas Chromatography–Flame Ionization Detection (HPLC-GC-FID) Analysis",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/195_1773919799.pdf"
+          },
+          {
+            "standardId": 66873,
+            "standardNumber": "IS 19754:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Textiles — Determination of Dyes after Methanol Extraction",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/724_1773900605.pdf"
+          },
+          {
+            "standardId": 66875,
+            "standardNumber": "IS 19755:2026",
+            "publishedOn": "2026-03-30",
+            "standardName": "Textiles — Determination of Pesticide Residues Content",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/695_1773895407.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 694,
+          "last_page": 70
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "72",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 66972,
+            "standardNumber": "IS 19778:2026",
+            "publishedOn": "2026-05-26",
+            "standardName": "Use of Geospatial Tools and Technologies in Environmental Impact Assessment and Environment Management Plan — Recommendations",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/06/127_1781073470.pdf"
+          },
+          {
+            "standardId": 66694,
+            "standardNumber": "IS 19738:2026",
+            "publishedOn": "2026-03-27",
+            "standardName": "Parameters and Assessment Criteria for Downstream Flow to Maintain Ecological Balance — Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/822_1776227805.pdf"
+          },
+          {
+            "standardId": 66696,
+            "standardNumber": "IS 19744:2026",
+            "publishedOn": "2026-03-27",
+            "standardName": "Preparation of Catchment Area Treatment (CAT) Plan —  Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/04/73_1776227908.pdf"
+          },
+          {
+            "standardId": 66390,
+            "standardNumber": "IS 19411:2026",
+            "publishedOn": "2026-03-05",
+            "standardName": "GLOSSARY OF TERMS RELATED TO COASTAL ENGINEERING",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proof/2026/03/54_1773899617.pdf"
+          },
+          {
+            "standardId": 32148,
+            "standardNumber": "IS 18884:2024",
+            "publishedOn": "2024-11-19",
+            "standardName": "Environmental Impact Assessment (EIA) and Environmental Management Plan (EMP) for River Valley and Hydroelectric Projects ï¿½ Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/18884.pdf"
+          },
+          {
+            "standardId": 31355,
+            "standardNumber": "IS 18662:2024",
+            "publishedOn": "2024-08-01",
+            "standardName": "PLANNING AND STRUCTURAL DESIGN OF CONCRETE FACE ROCKFILL DAM - GUIDELINES",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/18662.pdf"
+          },
+          {
+            "standardId": 29938,
+            "standardNumber": "IS 19027:2023",
+            "publishedOn": "2023-12-11",
+            "standardName": "Measurement and Control of Sediments in Natural Lakes — Guidelines",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/19027.pdf"
+          },
+          {
+            "standardId": 27780,
+            "standardNumber": "IS 17837:2022",
+            "publishedOn": "2022-10-31",
+            "standardName": "Junction of Earth Earth Core Rockfill Dam with Spillways NOF Dams Foundations and Outlets Guidelines",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/17837.pdf"
+          },
+          {
+            "standardId": 27443,
+            "standardNumber": "IS 17883:2022",
+            "publishedOn": "2022-07-31",
+            "standardName": "Geological Exploration for Tunnels  Guidelines",
+            "typeOfStandardName": "Others",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/17883.pdf"
+          },
+          {
+            "standardId": 25838,
+            "standardNumber": "IS 17422:2021",
+            "publishedOn": "2021-06-30",
+            "standardName": "Guidelines for assessment of the environmental heath impacts of river valley projects",
+            "typeOfStandardName": "Code of Practice",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/oldStandards/S14/S14V01/17422.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 195,
+          "last_page": 20
+        },
+        "msg": "New standards list retrieved."
+      }
+    },
+    {
+      "departmentId": "74",
+      "response": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "standardId": 67138,
+            "standardNumber": "IS 19700:2026",
+            "publishedOn": "2026-07-21",
+            "standardName": "Stationery — Cutter Blades — Specification",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/06/298_1780997981.pdf"
+          },
+          {
+            "standardId": 67081,
+            "standardNumber": "IS 19592:2026",
+            "publishedOn": "2026-07-09",
+            "standardName": "Gauge Block Comparator — Calibration",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Indigenous",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/05/40_1778836242.pdf"
+          },
+          {
+            "standardId": 67043,
+            "standardNumber": "IS 19751 (Part 1):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 1 Vocabulary",
+            "typeOfStandardName": "Terminology",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/422_1773825214.pdf"
+          },
+          {
+            "standardId": 67044,
+            "standardNumber": "IS 19751 (Part 2):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 2 Test method for longitudinal rail restraint",
+            "typeOfStandardName": "Product Specification",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/699_1773825505.pdf"
+          },
+          {
+            "standardId": 67045,
+            "standardNumber": "IS 19751 (Part 3):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems:  Part 3 Proof load test method for pull-out resistance",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/277_1773999690.pdf"
+          },
+          {
+            "standardId": 67046,
+            "standardNumber": "IS 19751 (Part 4):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems:  Part 4 Test methods for resistance to repeated loading",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/388_1773901378.pdf"
+          },
+          {
+            "standardId": 67047,
+            "standardNumber": "IS 19751 (Part 5):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 5 Test method for electrical resistance",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/783_1773919581.pdf"
+          },
+          {
+            "standardId": 67048,
+            "standardNumber": "IS 19751 (Part 6):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 6 Test method for resistance to severe environmental conditions",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/896_1773919643.pdf"
+          },
+          {
+            "standardId": 67049,
+            "standardNumber": "IS 19751 (Part 7):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 7 Test method for clamping force and uplift stiffness",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/440_1773654036.pdf"
+          },
+          {
+            "standardId": 67050,
+            "standardNumber": "IS 19751 (Part 8):2026",
+            "publishedOn": "2026-06-23",
+            "standardName": "Railway infrastructure — Rail fastening systems: Part 8 Test method for vertical stiffness",
+            "typeOfStandardName": "Methods of Tests",
+            "equivalenceTypeName": "Identical under dual numbering",
+            "is_documents": "BisProd/bisProd/projects/proofStage/2026/03/841_1773901549.pdf"
+          }
+        ],
+        "pagination": {
+          "current_page": 1,
+          "per_page": 10,
+          "total": 1276,
+          "last_page": 128
+        },
+        "msg": "New standards list retrieved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIS Knowledge Base Entity Relationships",
+  "description": "Relationship definitions for connecting BIS standards, products, QCOs, conformity assessment schemes, laboratories, testing, certification, licensing, regulatory documents, services, and related entities.",
+  "version": "1.0.0",
+
+  "relationship_model": {
+    "description": "Every relationship connects a source entity to a target entity and should be backed by an official BIS or Government of India source whenever applicable.",
+    "fields": {
+      "relationship_id": "Unique identifier for the relationship type.",
+      "source_entity_type": "Entity type from the BIS taxonomy.",
+      "relationship_type": "Semantic relationship between source and target.",
+      "target_entity_type": "Entity type from the BIS taxonomy.",
+      "direction": "Whether the relationship is directional or bidirectional.",
+      "description": "Meaning of the relationship.",
+      "inverse_relationship": "Logical inverse relationship where applicable.",
+      "evidence_required": true
+    }
+  },
+
+  "relationship_types": [
+
+    {
+      "relationship_id": "product_has_standard",
+      "source_entity_type": "product",
+      "relationship_type": "has_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_applies_to_product",
+      "description": "A product is covered by or associated with a particular Indian Standard."
+    },
+
+    {
+      "relationship_id": "standard_applies_to_product",
+      "source_entity_type": "standard",
+      "relationship_type": "applies_to_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_standard",
+      "description": "A standard specifies requirements applicable to a product."
+    },
+
+    {
+      "relationship_id": "standard_has_amendment",
+      "source_entity_type": "standard",
+      "relationship_type": "has_amendment",
+      "target_entity_type": "document",
+      "direction": "directed",
+      "inverse_relationship": "amendment_modifies_standard",
+      "description": "An amendment document modifies or updates a standard."
+    },
+
+    {
+      "relationship_id": "standard_revises_standard",
+      "source_entity_type": "standard",
+      "relationship_type": "revises",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_is_revised_by",
+      "description": "A newer standard revision supersedes or revises an earlier standard."
+    },
+
+    {
+      "relationship_id": "standard_supersedes_standard",
+      "source_entity_type": "standard",
+      "relationship_type": "supersedes",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_is_superseded_by",
+      "description": "A newer standard replaces an older standard."
+    },
+
+    {
+      "relationship_id": "standard_has_test_method",
+      "source_entity_type": "standard",
+      "relationship_type": "has_test_method",
+      "target_entity_type": "test_method",
+      "direction": "directed",
+      "inverse_relationship": "test_method_defined_by_standard",
+      "description": "A standard specifies or references a method for testing a product or characteristic."
+    },
+
+    {
+      "relationship_id": "standard_has_requirement",
+      "source_entity_type": "standard",
+      "relationship_type": "defines_requirement",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "procedure_defined_by_standard",
+      "description": "A standard defines a technical, testing, sampling, inspection, or conformity requirement."
+    },
+
+    {
+      "relationship_id": "qco_applies_to_product",
+      "source_entity_type": "qco",
+      "relationship_type": "applies_to_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_covered_by_qco",
+      "description": "A Quality Control Order applies mandatory regulatory requirements to a product."
+    },
+
+    {
+      "relationship_id": "qco_references_standard",
+      "source_entity_type": "qco",
+      "relationship_type": "references_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_referenced_by_qco",
+      "description": "A QCO identifies or requires compliance with a particular standard."
+    },
+
+    {
+      "relationship_id": "qco_requires_certification",
+      "source_entity_type": "qco",
+      "relationship_type": "requires_certification",
+      "target_entity_type": "certification",
+      "direction": "directed",
+      "inverse_relationship": "certification_required_by_qco",
+      "description": "A QCO requires a specified conformity assessment or BIS certification mechanism."
+    },
+
+    {
+      "relationship_id": "qco_associated_with_scheme",
+      "source_entity_type": "qco",
+      "relationship_type": "uses_conformity_scheme",
+      "target_entity_type": "scheme",
+      "direction": "directed",
+      "inverse_relationship": "scheme_used_for_qco",
+      "description": "A QCO is implemented through or associated with a particular BIS conformity assessment scheme."
+    },
+
+    {
+      "relationship_id": "qco_has_notification",
+      "source_entity_type": "qco",
+      "relationship_type": "has_notification",
+      "target_entity_type": "notification",
+      "direction": "directed",
+      "inverse_relationship": "notification_issues_qco",
+      "description": "An official notification establishes, modifies, extends, delays, or withdraws a QCO."
+    },
+
+    {
+      "relationship_id": "qco_has_amendment",
+      "source_entity_type": "qco",
+      "relationship_type": "has_amendment",
+      "target_entity_type": "notification",
+      "direction": "directed",
+      "inverse_relationship": "notification_amends_qco",
+      "description": "A notification or amendment modifies an existing QCO."
+    },
+
+    {
+      "relationship_id": "scheme_applies_to_product",
+      "source_entity_type": "scheme",
+      "relationship_type": "applies_to_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_uses_scheme",
+      "description": "A conformity assessment scheme is applicable to a particular product category."
+    },
+
+    {
+      "relationship_id": "scheme_based_on_standard",
+      "source_entity_type": "scheme",
+      "relationship_type": "based_on_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_supports_scheme",
+      "description": "A conformity assessment scheme uses a specified Indian Standard as its technical basis."
+    },
+
+    {
+      "relationship_id": "scheme_requires_testing",
+      "source_entity_type": "scheme",
+      "relationship_type": "requires_testing",
+      "target_entity_type": "testing",
+      "direction": "directed",
+      "inverse_relationship": "testing_required_by_scheme",
+      "description": "A conformity assessment scheme requires product, factory, laboratory, or other testing."
+    },
+
+    {
+      "relationship_id": "scheme_requires_inspection",
+      "source_entity_type": "scheme",
+      "relationship_type": "requires_inspection",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "inspection_required_by_scheme",
+      "description": "A conformity assessment scheme requires factory, market, or other inspection/assessment."
+    },
+
+    {
+      "relationship_id": "scheme_results_in_certification",
+      "source_entity_type": "scheme",
+      "relationship_type": "results_in_certification",
+      "target_entity_type": "certification",
+      "direction": "directed",
+      "inverse_relationship": "certification_issued_under_scheme",
+      "description": "Successful conformity assessment under a scheme can result in certification."
+    },
+
+    {
+      "relationship_id": "scheme_results_in_registration",
+      "source_entity_type": "scheme",
+      "relationship_type": "results_in_registration",
+      "target_entity_type": "registration",
+      "direction": "directed",
+      "inverse_relationship": "registration_under_scheme",
+      "description": "A scheme can result in a BIS registration."
+    },
+
+    {
+      "relationship_id": "product_requires_certification",
+      "source_entity_type": "product",
+      "relationship_type": "requires_certification",
+      "target_entity_type": "certification",
+      "direction": "directed",
+      "inverse_relationship": "certification_for_product",
+      "description": "A product requires or is eligible for a BIS certification."
+    },
+
+    {
+      "relationship_id": "certification_covers_product",
+      "source_entity_type": "certification",
+      "relationship_type": "covers_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_certification",
+      "description": "A certification covers a specific product or product category."
+    },
+
+    {
+      "relationship_id": "certification_based_on_standard",
+      "source_entity_type": "certification",
+      "relationship_type": "based_on_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_basis_for_certification",
+      "description": "Certification is granted against compliance with a specified standard."
+    },
+
+    {
+      "relationship_id": "certification_issued_to_manufacturer",
+      "source_entity_type": "certification",
+      "relationship_type": "issued_to",
+      "target_entity_type": "organization_and_stakeholder",
+      "direction": "directed",
+      "inverse_relationship": "stakeholder_holds_certification",
+      "description": "A certification is granted to an eligible manufacturer or other applicant."
+    },
+
+    {
+      "relationship_id": "certification_generates_licence",
+      "source_entity_type": "certification",
+      "relationship_type": "results_in_licence",
+      "target_entity_type": "licence",
+      "direction": "directed",
+      "inverse_relationship": "licence_issued_from_certification",
+      "description": "Successful certification results in a BIS licence where the applicable framework requires one."
+    },
+
+    {
+      "relationship_id": "licence_covers_product",
+      "source_entity_type": "licence",
+      "relationship_type": "covers_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_licence",
+      "description": "A BIS licence authorizes conformity/certification activity for a specified product."
+    },
+
+    {
+      "relationship_id": "licence_based_on_standard",
+      "source_entity_type": "licence",
+      "relationship_type": "based_on_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_basis_for_licence",
+      "description": "The licence is associated with a specified Indian Standard."
+    },
+
+    {
+      "relationship_id": "licence_uses_scheme",
+      "source_entity_type": "licence",
+      "relationship_type": "issued_under_scheme",
+      "target_entity_type": "scheme",
+      "direction": "directed",
+      "inverse_relationship": "scheme_generates_licence",
+      "description": "A licence is issued under a particular conformity assessment scheme."
+    },
+
+    {
+      "relationship_id": "licence_requires_renewal",
+      "source_entity_type": "licence",
+      "relationship_type": "requires_renewal",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "renewal_procedure_for_licence",
+      "description": "A licence may require periodic renewal or continuation action."
+    },
+
+    {
+      "relationship_id": "licence_subject_to_surveillance",
+      "source_entity_type": "licence",
+      "relationship_type": "subject_to_surveillance",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "surveillance_applies_to_licence",
+      "description": "A licence is subject to surveillance, inspection, testing, or performance monitoring."
+    },
+
+    {
+      "relationship_id": "licence_subject_to_suspension",
+      "source_entity_type": "licence",
+      "relationship_type": "subject_to_suspension",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "suspension_applies_to_licence",
+      "description": "A licence can be suspended, restored, cancelled, or otherwise modified under applicable rules."
+    },
+
+    {
+      "relationship_id": "testing_uses_test_method",
+      "source_entity_type": "testing",
+      "relationship_type": "uses_test_method",
+      "target_entity_type": "test_method",
+      "direction": "directed",
+      "inverse_relationship": "test_method_used_for_testing",
+      "description": "A testing activity uses a specified test method."
+    },
+
+    {
+      "relationship_id": "testing_against_standard",
+      "source_entity_type": "testing",
+      "relationship_type": "performed_against_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_defines_testing",
+      "description": "Testing is performed against requirements defined by a standard."
+    },
+
+    {
+      "relationship_id": "testing_performed_by_laboratory",
+      "source_entity_type": "testing",
+      "relationship_type": "performed_by",
+      "target_entity_type": "laboratory",
+      "direction": "directed",
+      "inverse_relationship": "laboratory_performs_testing",
+      "description": "A laboratory performs a specified test or testing activity."
+    },
+
+    {
+      "relationship_id": "laboratory_has_test_method",
+      "source_entity_type": "laboratory",
+      "relationship_type": "supports_test_method",
+      "target_entity_type": "test_method",
+      "direction": "directed",
+      "inverse_relationship": "test_method_supported_by_laboratory",
+      "description": "A laboratory has facilities/capability to perform a specified test method."
+    },
+
+    {
+      "relationship_id": "laboratory_tests_product",
+      "source_entity_type": "laboratory",
+      "relationship_type": "tests_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_tested_by_laboratory",
+      "description": "A laboratory has testing capability for a particular product or product category."
+    },
+
+    {
+      "relationship_id": "laboratory_recognized_for_testing",
+      "source_entity_type": "laboratory",
+      "relationship_type": "recognized_for_testing",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_has_recognized_laboratory",
+      "description": "A laboratory is recognized/approved/empanelled for testing against a particular standard."
+    },
+
+    {
+      "relationship_id": "test_method_defined_by_standard",
+      "source_entity_type": "test_method",
+      "relationship_type": "defined_by_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_has_test_method",
+      "description": "A test method is specified or referenced by a standard."
+    },
+
+    {
+      "relationship_id": "test_method_applies_to_product",
+      "source_entity_type": "test_method",
+      "relationship_type": "applies_to_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_test_method",
+      "description": "A test method applies to a particular product or product characteristic."
+    },
+
+    {
+      "relationship_id": "procedure_applies_to_entity",
+      "source_entity_type": "procedure",
+      "relationship_type": "applies_to",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "entity_has_procedure",
+      "description": "A BIS procedure applies to a relevant service, product, licence, certification, registration, or applicant."
+    },
+
+    {
+      "relationship_id": "procedure_requires_document",
+      "source_entity_type": "procedure",
+      "relationship_type": "requires_document",
+      "target_entity_type": "document",
+      "direction": "directed",
+      "inverse_relationship": "document_required_by_procedure",
+      "description": "A procedure requires an application form, declaration, technical document, test report, undertaking, or other document."
+    },
+
+    {
+      "relationship_id": "procedure_has_fee",
+      "source_entity_type": "procedure",
+      "relationship_type": "has_fee",
+      "target_entity_type": "fee",
+      "direction": "directed",
+      "inverse_relationship": "fee_charged_for_procedure",
+      "description": "A BIS procedure has an associated fee or charge."
+    },
+
+    {
+      "relationship_id": "procedure_has_timeline",
+      "source_entity_type": "procedure",
+      "relationship_type": "has_timeline",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "timeline_for_procedure",
+      "description": "A procedure has an applicable processing or completion timeline."
+    },
+
+    {
+      "relationship_id": "document_supports_entity",
+      "source_entity_type": "document",
+      "relationship_type": "supports",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "entity_supported_by_document",
+      "description": "An official document provides evidence or instructions concerning another entity."
+    },
+
+    {
+      "relationship_id": "notification_modifies_entity",
+      "source_entity_type": "notification",
+      "relationship_type": "modifies",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "entity_modified_by_notification",
+      "description": "An official notification modifies, establishes, withdraws, delays, or updates a regulatory requirement or service."
+    },
+
+    {
+      "relationship_id": "rule_governs_entity",
+      "source_entity_type": "rule",
+      "relationship_type": "governs",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "entity_governed_by_rule",
+      "description": "A BIS rule establishes requirements governing an entity, process, service, or activity."
+    },
+
+    {
+      "relationship_id": "act_authorizes_entity",
+      "source_entity_type": "act",
+      "relationship_type": "authorizes_or_governs",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "entity_governed_by_act",
+      "description": "An Act provides the legal framework governing a BIS activity."
+    },
+
+    {
+      "relationship_id": "regulation_governs_scheme",
+      "source_entity_type": "regulation",
+      "relationship_type": "governs",
+      "target_entity_type": "scheme",
+      "direction": "directed",
+      "inverse_relationship": "scheme_governed_by_regulation",
+      "description": "A BIS regulation governs conformity assessment or related activities."
+    },
+
+    {
+      "relationship_id": "regulation_governs_hallmarking",
+      "source_entity_type": "regulation",
+      "relationship_type": "governs",
+      "target_entity_type": "hallmarking_service",
+      "direction": "directed",
+      "inverse_relationship": "hallmarking_governed_by_regulation",
+      "description": "A regulation governs hallmarking-related activities."
+    },
+
+    {
+      "relationship_id": "hallmarking_applies_to_product",
+      "source_entity_type": "hallmarking_service",
+      "relationship_type": "applies_to_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_hallmarking_requirement",
+      "description": "A hallmarking requirement applies to a specified jewellery or precious-metal product."
+    },
+
+    {
+      "relationship_id": "hallmarking_performed_by_center",
+      "source_entity_type": "hallmarking_service",
+      "relationship_type": "performed_by",
+      "target_entity_type": "laboratory",
+      "direction": "directed",
+      "inverse_relationship": "laboratory_performs_hallmarking",
+      "description": "Hallmarking or assaying activity is performed by an authorized/recognized hallmarking centre."
+    },
+
+    {
+      "relationship_id": "hallmarking_has_fee",
+      "source_entity_type": "hallmarking_service",
+      "relationship_type": "has_fee",
+      "target_entity_type": "fee",
+      "direction": "directed",
+      "inverse_relationship": "fee_for_hallmarking",
+      "description": "A hallmarking service has an applicable charge."
+    },
+
+    {
+      "relationship_id": "registration_for_product",
+      "source_entity_type": "registration",
+      "relationship_type": "for_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_registration",
+      "description": "A registration applies to a specified product."
+    },
+
+    {
+      "relationship_id": "registration_for_manufacturer",
+      "source_entity_type": "registration",
+      "relationship_type": "for_manufacturer",
+      "target_entity_type": "organization_and_stakeholder",
+      "direction": "directed",
+      "inverse_relationship": "manufacturer_has_registration",
+      "description": "A registration is associated with an eligible manufacturer."
+    },
+
+    {
+      "relationship_id": "registration_based_on_standard",
+      "source_entity_type": "registration",
+      "relationship_type": "based_on_standard",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_basis_for_registration",
+      "description": "A registration is based on compliance with an applicable standard."
+    },
+
+    {
+      "relationship_id": "crs_product_has_registration",
+      "source_entity_type": "crs_service",
+      "relationship_type": "results_in_registration",
+      "target_entity_type": "registration",
+      "direction": "directed",
+      "inverse_relationship": "registration_issued_under_crs",
+      "description": "The Compulsory Registration Scheme can result in product registration."
+    },
+
+    {
+      "relationship_id": "fmcs_product_has_licence",
+      "source_entity_type": "fmcs_service",
+      "relationship_type": "results_in_licence",
+      "target_entity_type": "licence",
+      "direction": "directed",
+      "inverse_relationship": "licence_issued_under_fmcs",
+      "description": "Foreign Manufacturers Certification Scheme activity can result in a BIS licence."
+    },
+
+    {
+      "relationship_id": "management_system_certification",
+      "source_entity_type": "management_system",
+      "relationship_type": "results_in_certification",
+      "target_entity_type": "certification",
+      "direction": "directed",
+      "inverse_relationship": "certification_for_management_system",
+      "description": "Assessment of a management system can result in management-system certification."
+    },
+
+    {
+      "relationship_id": "stakeholder_applies_for_service",
+      "source_entity_type": "organization_and_stakeholder",
+      "relationship_type": "applies_for",
+      "target_entity_type": "procedure",
+      "direction": "directed",
+      "inverse_relationship": "procedure_used_by_stakeholder",
+      "description": "A manufacturer, importer, jeweller, laboratory, or other stakeholder applies for a BIS service or process."
+    },
+
+    {
+      "relationship_id": "stakeholder_owns_licence",
+      "source_entity_type": "organization_and_stakeholder",
+      "relationship_type": "holds",
+      "target_entity_type": "licence",
+      "direction": "directed",
+      "inverse_relationship": "licence_held_by_stakeholder",
+      "description": "An eligible stakeholder holds a BIS licence."
+    },
+
+    {
+      "relationship_id": "stakeholder_owns_registration",
+      "source_entity_type": "organization_and_stakeholder",
+      "relationship_type": "holds",
+      "target_entity_type": "registration",
+      "direction": "directed",
+      "inverse_relationship": "registration_held_by_stakeholder",
+      "description": "An eligible stakeholder holds a BIS registration."
+    },
+
+    {
+      "relationship_id": "stakeholder_has_certification",
+      "source_entity_type": "organization_and_stakeholder",
+      "relationship_type": "holds",
+      "target_entity_type": "certification",
+      "direction": "directed",
+      "inverse_relationship": "certification_held_by_stakeholder",
+      "description": "An eligible stakeholder holds a BIS certification."
+    },
+
+    {
+      "relationship_id": "complaint_about_product",
+      "source_entity_type": "complaint_service",
+      "relationship_type": "concerns_product",
+      "target_entity_type": "product",
+      "direction": "directed",
+      "inverse_relationship": "product_has_complaint",
+      "description": "A complaint concerns the quality, conformity, marking, or other issue involving a product."
+    },
+
+    {
+      "relationship_id": "complaint_about_licence",
+      "source_entity_type": "complaint_service",
+      "relationship_type": "concerns_licence",
+      "target_entity_type": "licence",
+      "direction": "directed",
+      "inverse_relationship": "licence_has_complaint",
+      "description": "A complaint concerns a BIS licence or licensee."
+    },
+
+    {
+      "relationship_id": "complaint_about_hallmark",
+      "source_entity_type": "complaint_service",
+      "relationship_type": "concerns_hallmarking",
+      "target_entity_type": "hallmarking_service",
+      "direction": "directed",
+      "inverse_relationship": "hallmarking_has_complaint",
+      "description": "A complaint concerns hallmarking, HUID, jewellery quality, or misuse of hallmark-related information."
+    },
+
+    {
+      "relationship_id": "office_provides_service",
+      "source_entity_type": "office",
+      "relationship_type": "provides_service",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "inverse_relationship": "service_provided_by_office",
+      "description": "A BIS office provides or handles a particular service, function, or geographic responsibility."
+    },
+
+    {
+      "relationship_id": "office_has_contact",
+      "source_entity_type": "office",
+      "relationship_type": "has_contact",
+      "target_entity_type": "contact",
+      "direction": "directed",
+      "inverse_relationship": "contact_belongs_to_office",
+      "description": "An office has an associated official contact."
+    },
+
+    {
+      "relationship_id": "training_covers_scheme",
+      "source_entity_type": "training_service",
+      "relationship_type": "covers",
+      "target_entity_type": "scheme",
+      "direction": "directed",
+      "inverse_relationship": "scheme_has_training",
+      "description": "A training programme covers a BIS conformity assessment scheme."
+    },
+
+    {
+      "relationship_id": "training_covers_standard",
+      "source_entity_type": "training_service",
+      "relationship_type": "covers",
+      "target_entity_type": "standard",
+      "direction": "directed",
+      "inverse_relationship": "standard_has_training",
+      "description": "A training programme covers a BIS standard or standards-related topic."
+    },
+
+    {
+      "relationship_id": "training_for_stakeholder",
+      "source_entity_type": "training_service",
+      "relationship_type": "intended_for",
+      "target_entity_type": "organization_and_stakeholder",
+      "direction": "directed",
+      "inverse_relationship": "stakeholder_has_training",
+      "description": "Training is intended for a specific stakeholder group."
+    },
+
+    {
+      "relationship_id": "portal_provides_service",
+      "source_entity_type": "other",
+      "relationship_type": "provides_digital_service",
+      "target_entity_type": "other",
+      "direction": "directed",
+      "description": "A BIS portal provides an online service such as application, verification, standards access, complaints, or laboratory services."
+    },
+
+    {
+      "relationship_id": "faq_answers_query",
+      "source_entity_type": "document",
+      "relationship_type": "answers_query",
+      "target_entity_type": "consumer_service",
+      "direction": "directed",
+      "description": "An FAQ or official guidance document answers a recurring user question."
+    },
+
+    {
+      "relationship_id": "entity_has_source",
+      "source_entity_type": "other",
+      "relationship_type": "supported_by_source",
+      "target_entity_type": "document",
+      "direction": "directed",
+      "inverse_relationship": "document_supports_entity",
+      "description": "An entity is supported by an official BIS or Government of India source."
+    },
+
+    {
+      "relationship_id": "entity_related_to_entity",
+      "source_entity_type": "other",
+      "relationship_type": "related_to",
+      "target_entity_type": "other",
+      "direction": "bidirectional",
+      "description": "General semantic relationship used only when a more specific relationship type is not appropriate."
+    }
+
+  ],
+
+  "critical_relationship_chains": [
+
+    {
+      "chain_id": "product_compliance_chain",
+      "description": "Core product compliance path.",
+      "sequence": [
+        "product",
+        "standard",
+        "qco",
+        "scheme",
+        "testing",
+        "laboratory",
+        "certification",
+        "licence",
+        "renewal_and_licence_management",
+        "surveillance_and_enforcement"
+      ]
+    },
+
+    {
+      "chain_id": "qco_compliance_chain",
+      "description": "Trace a mandatory product requirement from regulation to certification.",
+      "sequence": [
+        "qco",
+        "product",
+        "standard",
+        "scheme",
+        "certification",
+        "licence"
+      ]
+    },
+
+    {
+      "chain_id": "testing_chain",
+      "description": "Connect a product to its applicable testing requirements and laboratory.",
+      "sequence": [
+        "product",
+        "standard",
+        "test_method",
+        "testing",
+        "laboratory"
+      ]
+    },
+
+    {
+      "chain_id": "certification_chain",
+      "description": "Trace the lifecycle of BIS product certification.",
+      "sequence": [
+        "product",
+        "standard",
+        "scheme",
+        "procedure",
+        "testing",
+        "inspection",
+        "certification",
+        "licence",
+        "surveillance",
+        "renewal",
+        "suspension",
+        "cancellation"
+      ]
+    },
+
+    {
+      "chain_id": "regulatory_chain",
+      "description": "Trace legal and regulatory authority to an operational requirement.",
+      "sequence": [
+        "act",
+        "rule",
+        "regulation",
+        "notification",
+        "qco",
+        "standard",
+        "scheme",
+        "procedure"
+      ]
+    },
+
+    {
+      "chain_id": "hallmarking_chain",
+      "description": "Trace jewellery/precious-metal compliance through hallmarking.",
+      "sequence": [
+        "product",
+        "standard",
+        "hallmarking_service",
+        "hallmarking_centre",
+        "testing",
+        "huid",
+        "consumer_verification"
+      ]
+    },
+
+    {
+      "chain_id": "crs_chain",
+      "description": "Trace electronics/IT products through the Compulsory Registration Scheme.",
+      "sequence": [
+        "product",
+        "standard",
+        "crs_service",
+        "laboratory",
+        "testing",
+        "registration"
+      ]
+    },
+
+    {
+      "chain_id": "fmcs_chain",
+      "description": "Trace foreign manufacturer certification.",
+      "sequence": [
+        "foreign_manufacturer",
+        "product",
+        "standard",
+        "testing",
+        "laboratory",
+        "inspection",
+        "fmcs_service",
+        "licence",
+        "surveillance"
+      ]
+    },
+
+    {
+      "chain_id": "complaint_chain",
+      "description": "Trace a consumer complaint to the relevant product, licence, or service.",
+      "sequence": [
+        "consumer",
+        "complaint_service",
+        "product",
+        "licence",
+        "certification",
+        "surveillance_and_enforcement"
+      ]
+    },
+
+    {
+      "chain_id": "document_evidence_chain",
+      "description": "Trace an answer back to official documentary evidence.",
+      "sequence": [
+        "user_query",
+        "knowledge_entity",
+        "procedure_or_requirement",
+        "official_document",
+        "official_source"
+      ]
+    }
+  ],
+
+  "relationship_rules": {
+    "source_required": true,
+    "official_source_required": true,
+    "secondary_source_allowed": false,
+    "fabricated_relationships_allowed": false,
+    "unverified_relationships_allowed": false,
+    "relationships_must_use_valid_entity_ids": true,
+    "relationships_should_be_temporally_valid": true,
+    "effective_dates_should_be_recorded_when_applicable": true,
+    "superseded_relationships_should_not_be_deleted": true,
+    "superseded_relationships_should_be_marked_as_inactive": true
+  },
+
+  "relationship_metadata": {
+    "status_values": [
+      "active",
+      "inactive",
+      "superseded",
+      "withdrawn",
+      "draft",
+      "unknown"
+    ],
+    "confidence_values": [
+      "verified",
+      "high",
+      "medium",
+      "low"
+    ]
+  }
+}

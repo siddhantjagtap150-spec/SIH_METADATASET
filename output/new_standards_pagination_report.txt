@@ -1,0 +1,195 @@
+BIS NEW STANDARDS PAGINATION REPORT
+===================================
+
+Endpoint:
+POST https://standardsadmin.bis.gov.in/master-service/getNewStandardsList
+
+Scope:
+This report inspects the existing raw response, the saved structure report, and the official BIS Angular lazy chunk. It also performs two limited verification requests only. It does not collect all pages, modify standards.json, or modify any existing dataset.
+
+Evidence source:
+Official lazy chunk:
+https://standards.bis.gov.in/646.c3df0e0b4ae6d826.js
+
+The exact caller implementation found in that chunk constructs:
+const t = {
+  departmentId: departmentId or departmentEncId,
+  page: page,
+  per_page: perPage
+};
+
+It conditionally adds:
+- committeeId
+- fromDate
+- toDate
+- aspectName
+- degreeOfEquivalence
+- search
+
+It then calls getNewStandardsList(t).
+
+The same implementation initializes page = 1, uses perPage = 10, resets page to 1 for search, and accepts navigation only when page >= 1 and page <= lastPage. Therefore page numbering is 1-based.
+
+1. EXACT POST PAYLOAD FOR PAGE 1
+--------------------------------
+For department 0 with the portal default page size:
+{
+  "departmentId": 0,
+  "page": 1,
+  "per_page": 10
+}
+
+The previously saved first-page request used only {"departmentId": "0"}; the server defaulted it to page 1 and per_page 10. The portal's own exact payload includes page and per_page as shown above.
+
+2. EXACT POST PAYLOAD FOR PAGE 2
+--------------------------------
+For department 0:
+{
+  "departmentId": 0,
+  "page": 2,
+  "per_page": 10
+}
+
+A live verification request with this payload returned HTTP 200 and:
+{
+  "status": "SUCCESS",
+  "pagination": {
+    "current_page": 2,
+    "per_page": 10,
+    "total": 23,
+    "last_page": 3
+  }
+}
+The response contained 10 records.
+
+3. EXACT PAGINATION FIELD NAMES
+--------------------------------
+Request fields:
+- departmentId
+- page
+- per_page
+
+Pagination behavior:
+- page is 1-based.
+- per_page controls the requested page size.
+- No offset field is used by the getNewStandardsList caller.
+- No sort field is used by the getNewStandardsList caller.
+
+Optional request filter fields found in the exact caller:
+- committeeId
+- fromDate
+- toDate
+- aspectName
+- degreeOfEquivalence
+- search
+
+No other pagination, offset, or sort field was identified in the relevant caller implementation.
+
+4. EXACT RESPONSE FIELDS
+-------------------------
+Top-level response fields:
+- status
+- data
+- pagination
+- msg
+
+The records are in:
+- data
+
+Pagination response fields:
+- pagination.current_page
+- pagination.per_page
+- pagination.total
+- pagination.last_page
+
+The previously saved raw response confirms these exact fields for all 18 departments.
+
+5. REAL EXAMPLE REQUEST AND RESPONSE STRUCTURE
+-----------------------------------------------
+Real tested page-2 request:
+{
+  "departmentId": 0,
+  "page": 2,
+  "per_page": 10
+}
+
+Real tested response structure:
+{
+  "status": "SUCCESS",
+  "data": [
+    "standard record objects; 10 objects were returned in this request"
+  ],
+  "pagination": {
+    "current_page": 2,
+    "per_page": 10,
+    "total": 23,
+    "last_page": 3
+  },
+  "msg": "New standards list retrieved."
+}
+
+A saved page-1 record has these exact fields:
+{
+  "standardId": 21357,
+  "standardNumber": "IS/ISO 10823:2004",
+  "publishedOn": "2011-08-31",
+  "standardName": "Guidelines for the selection of roller chain drives",
+  "typeOfStandardName": "-",
+  "equivalenceTypeName": "-",
+  "is_documents": null
+}
+
+6. CAN THE ENDPOINT REQUEST MORE THAN 10 RECORDS PER PAGE?
+-----------------------------------------------------------
+Yes. A live verification request used:
+{
+  "departmentId": 0,
+  "page": 1,
+  "per_page": 25
+}
+
+It returned HTTP 200 with:
+{
+  "status": "SUCCESS",
+  "pagination": {
+    "current_page": 1,
+    "per_page": 25,
+    "total": 23,
+    "last_page": 1
+  }
+}
+It returned 23 records, demonstrating that per_page can be greater than 10 for this endpoint.
+
+The portal UI defaults perPage to 10, but the endpoint accepts a larger per_page value. This report does not infer an upper limit because no upper limit was exposed by the inspected JavaScript or the two tests.
+
+7. CAN ALL 12,223 RECORDS BE RETRIEVED BY ITERATING PAGES?
+------------------------------------------------------------
+Yes, based on the confirmed mechanism:
+
+For each department ID:
+1. Start with page = 1.
+2. Send the departmentId, page, and per_page fields.
+3. Read pagination.last_page.
+4. Continue through page 2, page 3, and so on until page == last_page.
+5. Read records from data on each response.
+
+The saved raw file reports 18 departments and a combined pagination.total of 12,223 records. Since each response exposes current_page, per_page, total, and last_page, the endpoint provides the fields needed to iterate all pages.
+
+This report does not perform that full collection.
+
+8. DETAIL IDENTIFIERS
+----------------------
+The raw records contain standardId and standardNumber.
+The inspected portal code navigates to standard details using:
+- t.standardEncId when present
+- otherwise t.standardId
+
+The raw first-page records inspected contain standardId. No standardEncId was present in those raw records. No additional detail identifier is asserted here.
+
+9. FIELDS NOT USED BY THE PAGINATION CALLER
+--------------------------------------------
+No offset field was found in the exact getNewStandardsList caller.
+No sort field was found in the exact getNewStandardsList caller.
+The optional search/filter fields are listed in section 3.
+
+END OF REPORT

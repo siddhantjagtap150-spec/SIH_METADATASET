@@ -1,0 +1,769 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bis-knowledge-base-schema-v1",
+  "title": "BIS Knowledge Base Metadata Schema",
+  "description": "Master JSON Schema for the Bureau of Indian Standards (BIS) knowledge base used for MongoDB and RAG.",
+  "type": "object",
+
+  "required": [
+    "entity_id",
+    "entity_type",
+    "name",
+    "classification",
+    "description",
+    "source",
+    "metadata"
+  ],
+
+  "properties": {
+    "entity_id": {
+      "type": "string",
+      "description": "Globally unique identifier for the BIS entity."
+    },
+
+    "entity_type": {
+      "type": "string",
+      "description": "Type of BIS knowledge entity.",
+      "enum": [
+        "standard",
+        "product",
+        "qco",
+        "scheme",
+        "certification",
+        "registration",
+        "licence",
+        "hallmarking_service",
+        "crs_service",
+        "fmcs_service",
+        "laboratory",
+        "test_method",
+        "procedure",
+        "fee",
+        "document",
+        "act",
+        "rule",
+        "regulation",
+        "notification",
+        "circular",
+        "office",
+        "contact",
+        "complaint_service",
+        "training_service",
+        "consumer_service",
+        "management_system",
+        "other"
+      ]
+    },
+
+    "name": {
+      "type": "string"
+    },
+
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "classification": {
+      "type": "object",
+      "required": [
+        "domain"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string"
+        },
+        "subdomain": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "subcategory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "description": {
+      "type": "string"
+    },
+
+    "purpose": {
+      "type": "string"
+    },
+
+    "stakeholders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "industry_sectors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "standards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "schemes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "qcos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "applicability": {
+      "type": "object",
+      "properties": {
+        "geography": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mandatory_status": {
+          "type": "string",
+          "enum": [
+            "mandatory",
+            "voluntary",
+            "conditional",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exceptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "eligible_entities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "technical_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "manufacturing_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "infrastructure_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quality_control_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "process_control_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "other_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "procedure": {
+      "type": "object",
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "step_number",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "step_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "portal": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "application_method": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "portal": {
+          "type": "string"
+        },
+        "inspection": {
+          "type": "string"
+        },
+        "assessment": {
+          "type": "string"
+        },
+        "decision": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "testing": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "test_methods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "test_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "testing_frequency": {
+          "type": "string"
+        },
+        "testing_facilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "laboratories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "certification_or_registration": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "type": {
+          "type": "string"
+        },
+        "scheme": {
+          "type": "string"
+        },
+        "mark": {
+          "type": "string"
+        },
+        "certificate": {
+          "type": "string"
+        },
+        "licence": {
+          "type": "string"
+        },
+        "registration": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "fees": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fee_type": {
+            "type": "string"
+          },
+          "amount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "currency": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "timeline": {
+      "type": "object",
+      "properties": {
+        "processing_time": {
+          "type": "string"
+        },
+        "testing_time": {
+          "type": "string"
+        },
+        "inspection_time": {
+          "type": "string"
+        },
+        "other": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "validity": {
+      "type": "object",
+      "properties": {
+        "period": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "renewal": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "period": {
+          "type": "string"
+        },
+        "procedure": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "surveillance": {
+      "type": "object",
+      "properties": {
+        "applicable": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "frequency": {
+          "type": "string"
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "inspection": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "frequency": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "complaints": {
+      "type": "object",
+      "properties": {
+        "available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "procedure": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "appeals_and_grievances": {
+      "type": "object",
+      "properties": {
+        "available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "procedure": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "location": {
+      "type": "object",
+      "properties": {
+        "offices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "laboratories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regional_offices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "branches": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "department": {
+            "type": "string"
+          },
+          "contact_type": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "related_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "entity_id",
+          "relationship"
+        ],
+        "properties": {
+          "entity_id": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "common_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "search_metadata": {
+      "type": "object",
+      "properties": {
+        "searchable_text": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "language": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "source": {
+      "type": "object",
+      "required": [
+        "organization",
+        "verification_status"
+      ],
+      "properties": {
+        "organization": {
+          "type": "string"
+        },
+        "document_title": {
+          "type": "string"
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "section": {
+          "type": "string"
+        },
+        "effective_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "last_verified": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "partially_verified",
+            "not_verified",
+            "outdated"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "metadata": {
+      "type": "object",
+      "required": [
+        "version"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "data_quality": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "unknown"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "additionalProperties": false
+}
